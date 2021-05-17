@@ -6,11 +6,15 @@ import aiofiles
 from watchgod import awatch
 import regex as re
 
+import daemon
+from main import LOGLEVEL
+
 invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d).*(?<status>failed)")
 valid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d).*(?<status>accept)")
 log_dir = 'data/logs'
 newest = max(glob.iglob(log_dir + '/*.log'), key=os.path.getctime)
-print(newest)
+if LOGLEVEL == "DEBUG":
+    print(newest)
 
 
 async def preprocess(queue):
@@ -18,8 +22,10 @@ async def preprocess(queue):
     async with aiofiles.open(newest) as f:
         async for log_line in f:
             share_result = parse_line(log_line)
-            await queue.put(share_result)
-            print(f"producing {log_line}")
+            if share_result:
+                await queue.put(share_result)
+                if LOGLEVEL == "DEBUG":
+                    print(f"producing {log_line}")
 
 
 async def produce(queue):
@@ -29,7 +35,8 @@ async def produce(queue):
 
         share_result = parse_line(log_line)
         if share_result:
-            print(f"producing {log_line}")
+            if LOGLEVEL == "DEBUG":
+                print(f"producing {log_line}")
             await queue.put(share_result)
 
 
@@ -39,7 +46,10 @@ async def consume(queue):
         item = await queue.get()
 
         # process the item
-        print(f'consuming {item}...')
+        if LOGLEVEL == "DEBUG":
+            print(f'consuming {item}...')\
+
+        await daemon.send_health_update(item)
 
         # Notify the queue that the item has been processed
         queue.task_done()
@@ -63,7 +73,7 @@ def parse_line(line: str) -> dict:
     if invalid or valid:
         match = valid if valid else invalid
         return {
-            'status': match.group('status'),
+            'share_status': match.group('status'),
             'gpu_no': match.group('gpu_no'),
             'time': match.group('time')
         }
