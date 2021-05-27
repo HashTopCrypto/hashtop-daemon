@@ -5,6 +5,9 @@ import time
 import aiofiles
 from watchgod import awatch
 import regex as re
+import datetime
+import pytz
+from tzlocal import get_localzone
 
 import daemon
 from main import LOGLEVEL
@@ -47,12 +50,11 @@ async def consume(queue):
 
         # process the item
         if LOGLEVEL == "DEBUG":
-            print(f'consuming {item}...')\
+            print(f'consuming {item}...')
+            await daemon.send_health_update(item)
 
-        await daemon.send_health_update(item)
-
-        # Notify the queue that the item has been processed
-        queue.task_done()
+    # Notify the queue that the item has been processed
+    queue.task_done()
 
 
 async def get_last_line(file):
@@ -72,10 +74,27 @@ def parse_line(line: str) -> dict:
     # only return a dict if the line read is a share status line
     if invalid or valid:
         match = valid if valid else invalid
+        log_time = datetime.datetime.strptime(match.group('time'), "%H:%M:%S").time()
+        ts = create_timestamp(log_time)
+        share_type = 'valid' if match.group('status') == 'accept' else 'invalid'
+        print(share_type)
         return {
-            'share_status': match.group('status'),
+            'share_type': share_type,
             'gpu_no': match.group('gpu_no'),
-            'time': match.group('time')
+            'timestamp': ts
         }
     else:
         return None
+
+
+def create_timestamp(log_time: time) -> datetime:
+    # get local timezone
+    local_tz = get_localzone()
+
+    # combine the local date with the local time from the log file, and set the local timezone
+    local_logdt = datetime.datetime.combine(datetime.date.today(), log_time)
+    local_logdt = local_tz.localize(local_logdt)
+
+    # create a utc timestamp
+    utc_dt = local_logdt.astimezone(pytz.utc)
+    return int(utc_dt.timestamp())

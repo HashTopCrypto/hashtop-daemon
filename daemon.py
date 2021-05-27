@@ -15,22 +15,21 @@ else:
 
 MINER_UUID = os.getenv('MINER_UUID')
 USERNAME = os.getenv('USERNAME')
-SOCKET_URL = os.getenv('SOCKET_URL')
-
-
+API_URL = os.getenv('API_URL')
+namespace = '/miner'
 
 @sio.event
 async def send_health_update(data):
-    await sio.emit('health_update',
-                   (os.getenv('MINER_UUID'),
-                    data)
-                   )
+    response = await sio.emit('health_update',
+                              (os.getenv('MINER_UUID'),
+                               data)
+                              )
+    print(response)
 
 
 @sio.event
 async def disconnect():
     print('disconnected from server')
-
 
 
 @sio.event
@@ -40,7 +39,7 @@ async def connect():
 
 
 async def connect_server():
-    await sio.connect(SOCKET_URL)
+    await sio.connect(API_URL + namespace)
     print(sio.sid)
 
 
