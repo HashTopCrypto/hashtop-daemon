@@ -39,7 +39,7 @@ async def connect():
 
 
 async def connect_server():
-    await sio.connect(API_URL + namespace)
+    await sio.connect(API_URL)
     print(sio.sid)
 
 

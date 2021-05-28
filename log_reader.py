@@ -51,7 +51,8 @@ async def consume(queue):
         # process the item
         if LOGLEVEL == "DEBUG":
             print(f'consuming {item}...')
-            await daemon.send_health_update(item)
+
+        await daemon.send_health_update(item)
 
     # Notify the queue that the item has been processed
     queue.task_done()
