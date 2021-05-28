@@ -1,0 +1,1000 @@
+10:56:13 New Job: 715120b2 Difficulty: 4.00G
+10:56:15 New Job: 9b9a8c80 Difficulty: 4.00G
+10:56:16 New Job: cc15e2fb Difficulty: 4.00G
+10:56:18 GPU8: Share #2076 verified on CPU, difficulty: 6.76G
+10:56:18 GPU8: Share #2076 accepted 36 ms
+10:56:18 New Job: bb95818d Difficulty: 4.00G
+10:56:18 New Job: 5f59764c Difficulty: 4.00G
+10:56:21 New Job: 3f70d3c9 Difficulty: 4.00G
+10:56:22 New Job: 99987734 Difficulty: 4.00G
+10:56:22 New Job: 9f0aa353 Difficulty: 4.00G
+10:56:25 New Job: 5fc1d655 Difficulty: 4.00G
+10:56:27 GPU0: Share #4131 verified on CPU, difficulty: 4.73G
+10:56:27 GPU0: Share #4131 accepted 281 ms
+10:56:28 New Job: ffb62e52 Difficulty: 4.00G
+10:56:29 New Job: 913b3154 Difficulty: 4.00G
+10:56:29 GPU8: Share #2077 verified on CPU, difficulty: 12.04G
+10:56:29 GPU8: Share #2077 accepted 39 ms
+10:56:29 New Job: 1b6d25d7 Difficulty: 4.00G
+10:56:32 New Job: ec0b462b Difficulty: 4.00G
+10:56:34 GPU2: Share #2015 verified on CPU, difficulty: 7.18G
+10:56:34 GPU2: Share #2015 accepted 35 ms
+10:56:35 New Job: 0d445169 Difficulty: 4.00G
+10:56:38 New Job: 53daaaa2 Difficulty: 4.00G
+10:56:41 New Job: 191e7e66 Difficulty: 4.00G
+10:56:42 GPU2: Share #2016 verification on CPU failed, check overclocking settings
+10:56:42 GPU2: Share #2016 rejected: Invalid PoW Solution
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4131/0/0 1110 10501   300 W  398.12 KH/W |
+|  GPU1 55 C  80 %  60.60 MH/s   2034/0/0  840  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2013/0/3  840  7900   130 W  466.18 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1091/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 53 C  80 %  57.95 MH/s   1987/0/0  615  7900   120 W  482.88 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2073/0/0  840  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  80 %  26.25 MH/s    947/0/0 1911  4201   119 W  220.56 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2140/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2077/0/0  780  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2165/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4123/0/0 1095 10501   310 W  386.29 KH/W |
+|                  718.64 MH/s  24781/0/3             1669 W  430.58 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+10:56:42 Uptime: 1d 14:59:13 Shares/Minute: 10.59 Electricity: 65.065kWh
+10:56:44 New Job: 2c955716 Difficulty: 4.00G
+10:56:44 GPU3: Share #1092 verified on CPU, difficulty: 1.02T
+10:56:44 GPU3: Share #1092 accepted 35 ms
+10:56:46 GPU7: Share #2141 verified on CPU, difficulty: 8.30G
+10:56:46 GPU7: Share #2141 accepted 282 ms
+10:56:47 New Job: 5d10be78 Difficulty: 4.00G
+10:56:50 New Job: bf07725f Difficulty: 4.00G
+10:56:50 New Job: 1e700db2 Difficulty: 4.00G
+10:56:51 New Job: b10b5638 Difficulty: 4.00G
+10:56:53 GPU3: Share #1093 verified on CPU, difficulty: 4.69G
+10:56:53 GPU3: Share #1093 accepted 39 ms
+10:56:53 New Job: 0c760c13 Difficulty: 4.00G
+10:56:57 New Job: 172513be Difficulty: 4.00G
+10:57:00 New Job: 35519425 Difficulty: 4.00G
+10:57:02 GPU9: Share #2166 verified on CPU, difficulty: 6.52G
+10:57:02 GPU9: Share #2166 accepted 277 ms
+10:57:02 New Job: 073877a5 Difficulty: 4.00G
+10:57:04 New Job: 9144a34f Difficulty: 4.00G
+10:57:04 New Job: 23ac1823 Difficulty: 4.00G
+10:57:05 GPU0: Share #4132 verified on CPU, difficulty: 7.80G
+10:57:05 GPU0: Share #4132 accepted 37 ms
+10:57:07 New Job: fb519ee0 Difficulty: 4.00G
+10:57:07 New Job: 237a62b4 Difficulty: 4.00G
+10:57:08 GPU8: Share #2078 verified on CPU, difficulty: 6.24G
+10:57:08 GPU8: Share #2078 accepted 37 ms
+10:57:10 New Job: b44107fc Difficulty: 4.00G
+10:57:10 GPU0: Share #4133 verified on CPU, difficulty: 16.86G
+10:57:10 GPU0: Share #4133 accepted 36 ms
+10:57:11 New Job: 70057138 Difficulty: 4.00G
+10:57:11 New Job: 1484a3b9 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4133/0/0 1065 10501   300 W  398.15 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2034/0/0  855  7900   120 W  504.99 KH/W |
+|  GPU2 44 C  80 %  60.60 MH/s   2013/0/3  840  7900   130 W  466.18 KH/W |
+|  GPU3 50 C  81 %  31.72 MH/s   1093/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.95 MH/s   1987/0/0  615  7900   120 W  482.90 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2073/0/0  855  7900   120 W  505.05 KH/W |
+|  GPU6 59 C  80 %  26.25 MH/s    947/0/0 1936  4201   119 W  220.55 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2141/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2078/0/0  780  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2166/0/0  825  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4123/0/0 1110 10501   310 W  386.29 KH/W |
+|                  718.65 MH/s  24788/0/3             1669 W  430.59 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+10:57:12 Uptime: 1d 14:59:43 Shares/Minute: 10.59 Electricity: 65.079kWh
+10:57:14 New Job: 04303cc9 Difficulty: 4.00G
+10:57:17 New Job: 41e71dd1 Difficulty: 4.00G
+10:57:17 New Job: 7a33be1c Difficulty: 4.00G
+10:57:18 New Job: 04c84287 Difficulty: 4.00G
+10:57:19 New Job: c713643a Difficulty: 4.00G
+10:57:19 GPU8: Share #2079 verified on CPU, difficulty: 5.36G
+10:57:19 GPU8: Share #2079 accepted 127 ms
+10:57:19 New Job: 1556ab97 Difficulty: 4.00G
+10:57:21 GPU10: Share #4124 verified on CPU, difficulty: 4.35G
+10:57:21 GPU10: Share #4124 accepted 40 ms
+10:57:22 New Job: 6f15e618 Difficulty: 4.00G
+10:57:25 New Job: 7cee9342 Difficulty: 4.00G
+10:57:26 GPU8: Share #2080 verified on CPU, difficulty: 5.72G
+10:57:26 GPU8: Share #2080 accepted 37 ms
+10:57:28 New Job: c7741adb Difficulty: 4.00G
+10:57:28 GPU9: Share #2167 verified on CPU, difficulty: 7.94G
+10:57:28 GPU9: Share #2167 accepted 37 ms
+10:57:31 New Job: e60afdc5 Difficulty: 4.00G
+10:57:34 New Job: a7f6146b Difficulty: 4.00G
+10:57:37 New Job: e2bb3198 Difficulty: 4.00G
+10:57:40 New Job: 46039d91 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.45 MH/s   4133/0/0 1095 10501   300 W  398.17 KH/W |
+|  GPU1 55 C  80 %  60.60 MH/s   2034/0/0  855  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2013/0/3  840  7900   130 W  466.18 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1093/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.96 MH/s   1987/0/0  615  7900   120 W  482.96 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2073/0/0  840  7900   120 W  505.05 KH/W |
+|  GPU6 59 C  80 %  26.25 MH/s    947/0/0 1898  4201   119 W  220.55 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2141/0/0  720  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2080/0/0  780  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2167/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4124/0/0 1110 10501   310 W  386.29 KH/W |
+|                  718.67 MH/s  24792/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+10:57:42 Uptime: 1d 15:00:13 Shares/Minute: 10.59 Electricity: 65.093kWh
+10:57:43 New Job: c7d7109d Difficulty: 4.00G
+10:57:46 New Job: 8edee8f0 Difficulty: 4.00G
+10:57:49 New Job: 0021593c Difficulty: 4.00G
+10:57:52 New Job: b89ec7ed Difficulty: 4.00G
+10:57:55 New Job: aca5e0b5 Difficulty: 4.00G
+10:57:57 New Job: 20f179b3 Difficulty: 4.00G
+10:57:57 New Job: 3184f9b7 Difficulty: 4.00G
+10:57:59 GPU10: Share #4125 verified on CPU, difficulty: 9.92G
+10:57:59 GPU10: Share #4125 accepted 36 ms
+10:58:00 New Job: 9c735cd8 Difficulty: 4.00G
+10:58:03 GPU4: Share #1988 verified on CPU, difficulty: 4.76G
+10:58:03 GPU4: Share #1988 accepted 286 ms
+10:58:03 New Job: cf1be01b Difficulty: 4.00G
+10:58:04 GPU0: Share #4134 verified on CPU, difficulty: 6.64G
+10:58:04 GPU0: Share #4134 accepted 275 ms
+10:58:06 New Job: 69d6c497 Difficulty: 4.00G
+10:58:09 New Job: 466d4b70 Difficulty: 4.00G
+10:58:12 New Job: 565ac80a Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.45 MH/s   4134/0/0 1110 10501   300 W  398.16 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2034/0/0  870  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2013/0/3  840  7900   130 W  466.17 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1093/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.96 MH/s   1988/0/0  615  7900   120 W  482.97 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2073/0/0  810  7900   120 W  505.05 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    947/0/0 1923  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2141/0/0  690  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2080/0/0  765  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2167/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 51 C  80 % 119.75 MH/s   4125/0/0 1110 10501   310 W  386.29 KH/W |
+|                  718.67 MH/s  24795/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+10:58:12 Uptime: 1d 15:00:43 Shares/Minute: 10.59 Electricity: 65.107kWh
+10:58:15 New Job: 89e10b84 Difficulty: 4.00G
+10:58:18 New Job: 248defae Difficulty: 4.00G
+10:58:20 GPU10: Share #4126 verified on CPU, difficulty: 4.35G
+10:58:20 GPU10: Share #4126 accepted 276 ms
+10:58:21 New Job: 9276d8c3 Difficulty: 4.00G
+10:58:23 New Job: 76fa1a80 Difficulty: 4.00G
+10:58:23 GPU6: Share #948 verified on CPU, difficulty: 6.30G
+10:58:23 GPU6: Share #948 accepted 37 ms
+10:58:24 New Job: a9a5f0ff Difficulty: 4.00G
+10:58:27 GPU3: Share #1094 verified on CPU, difficulty: 4.67G
+10:58:27 GPU3: Share #1094 accepted 38 ms
+10:58:27 New Job: 52efa751 Difficulty: 4.00G
+10:58:28 GPU0: Share #4135 verified on CPU, difficulty: 15.00G
+10:58:28 GPU0: Share #4135 accepted 278 ms
+10:58:30 GPU2: Share #2017 verified on CPU, difficulty: 35.31G
+10:58:30 GPU2: Share #2017 accepted 292 ms
+10:58:30 New Job: fdd40d94 Difficulty: 4.00G
+10:58:30 GPU10: Share #4127 verified on CPU, difficulty: 19.61G
+10:58:30 GPU10: Share #4127 accepted 34 ms
+10:58:33 New Job: 37fb84c0 Difficulty: 4.00G
+10:58:36 New Job: 9b40a493 Difficulty: 4.00G
+10:58:39 New Job: 07b3d236 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.45 MH/s   4135/0/0 1095 10501   300 W  398.18 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2034/0/0  855  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2014/0/3  840  7900   130 W  466.18 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1094/0/0 1050  7750    80 W  396.50 KH/W |
+|  GPU4 53 C  80 %  57.96 MH/s   1988/0/0  600  7900   120 W  482.96 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2073/0/0  795  7900   120 W  505.05 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    948/0/0 1898  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2141/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2080/0/0  780  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2167/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4127/0/0 1095 10501   310 W  386.29 KH/W |
+|                  718.67 MH/s  24801/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+10:58:42 Uptime: 1d 15:01:13 Shares/Minute: 10.59 Electricity: 65.121kWh
+10:58:42 New Job: 01f417e6 Difficulty: 4.00G
+10:58:45 New Job: 673e6f2f Difficulty: 4.00G
+10:58:46 GPU0: Share #4136 verified on CPU, difficulty: 4.65G
+10:58:46 GPU0: Share #4136 accepted 35 ms
+10:58:48 New Job: 56911be3 Difficulty: 4.00G
+10:58:49 GPU4: Share #1989 verified on CPU, difficulty: 5.87G
+10:58:49 GPU4: Share #1989 accepted 287 ms
+10:58:51 New Job: 81529f4c Difficulty: 4.00G
+10:58:54 New Job: ce780859 Difficulty: 4.00G
+10:58:55 New Job: 1202eefd Difficulty: 4.00G
+10:58:58 New Job: 0698866a Difficulty: 4.00G
+10:59:01 New Job: a4e11db4 Difficulty: 4.00G
+10:59:04 New Job: c513a95b Difficulty: 4.00G
+10:59:05 New Job: 0b132dc8 Difficulty: 4.00G
+10:59:05 New Job: 891279f3 Difficulty: 4.00G
+10:59:05 New Job: acbcad5a Difficulty: 4.00G
+10:59:07 New Job: e85553e6 Difficulty: 4.00G
+10:59:08 New Job: 7beca957 Difficulty: 4.00G
+10:59:08 New Job: ba4f07d1 Difficulty: 4.00G
+10:59:08 New Job: 12ca684f Difficulty: 4.00G
+10:59:08 New Job: a7628388 Difficulty: 4.00G
+10:59:11 New Job: e36025c8 Difficulty: 4.00G
+10:59:11 GPU5: Share #2074 verified on CPU, difficulty: 18.33G
+10:59:11 GPU5: Share #2074 accepted 37 ms
+10:59:11 New Job: f1621415 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.45 MH/s   4136/0/0 1095 10501   300 W  398.17 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2034/0/0  855  7900   120 W  504.99 KH/W |
+|  GPU2 44 C  80 %  60.60 MH/s   2014/0/3  840  7900   130 W  466.18 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1094/0/0 1050  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.96 MH/s   1989/0/0  615  7900   120 W  483.01 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2074/0/0  840  7900   120 W  505.05 KH/W |
+|  GPU6 59 C  81 %  26.24 MH/s    948/0/0 1911  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2141/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2080/0/0  780  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2167/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4127/0/0 1095 10501   310 W  386.29 KH/W |
+|                  718.67 MH/s  24804/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+10:59:12 Uptime: 1d 15:01:43 Shares/Minute: 10.59 Electricity: 65.135kWh
+10:59:14 New Job: e8815e83 Difficulty: 4.00G
+10:59:16 GPU5: Share #2075 verified on CPU, difficulty: 30.66G
+10:59:16 GPU5: Share #2075 accepted 286 ms
+10:59:16 GPU0: Share #4137 verified on CPU, difficulty: 4.60G
+10:59:16 GPU0: Share #4137 accepted 34 ms
+10:59:17 New Job: b210602a Difficulty: 4.00G
+10:59:20 New Job: 73c66fe3 Difficulty: 4.00G
+10:59:23 GPU5: Share #2076 verified on CPU, difficulty: 13.00G
+10:59:23 GPU5: Share #2076 accepted 36 ms
+10:59:23 New Job: dd0aa217 Difficulty: 4.00G
+10:59:26 New Job: 923524da Difficulty: 4.00G
+10:59:27 New Job: 64e44c61 Difficulty: 4.00G
+10:59:27 GPU9: Share #2168 verified on CPU, difficulty: 8.92G
+10:59:27 GPU9: Share #2168 accepted 142 ms
+10:59:27 New Job: cded7e94 Difficulty: 4.00G
+10:59:30 New Job: e12e25ea Difficulty: 4.00G
+10:59:30 GPU10: Share #4128 verified on CPU, difficulty: 4.93G
+10:59:30 GPU10: Share #4128 accepted 66 ms
+10:59:32 GPU1: Share #2035 verified on CPU, difficulty: 14.71G
+10:59:32 GPU1: Share #2035 accepted 36 ms
+10:59:33 New Job: 93b117c9 Difficulty: 4.00G
+10:59:39 New Job: f5ad4233 Difficulty: 4.00G
+10:59:39 New Job: 6fc34ebe Difficulty: 4.00G
+10:59:39 GPU9: Share #2169 verified on CPU, difficulty: 8.16G
+10:59:39 GPU9: Share #2169 accepted 2956 ms
+10:59:39 New Job: edf3df81 Difficulty: 4.00G
+10:59:39 New Job: 02639261 Difficulty: 4.00G
+10:59:40 GPU4: Share #1990 verified on CPU, difficulty: 5.24G
+10:59:40 GPU4: Share #1990 accepted 33 ms
+10:59:41 New Job: 8bb64ec1 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.45 MH/s   4137/0/0 1140 10501   300 W  398.18 KH/W |
+|  GPU1 55 C  80 %  60.60 MH/s   2035/0/0  840  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2014/0/3  840  7900   130 W  466.17 KH/W |
+|  GPU3 50 C  79 %  31.72 MH/s   1094/0/0 1050  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.96 MH/s   1990/0/0  615  7900   120 W  483.00 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2076/0/0  840  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    948/0/0 1923  4201   119 W  220.53 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2141/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2080/0/0  765  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2169/0/0  825  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4128/0/0 1110 10501   310 W  386.30 KH/W |
+|                  718.68 MH/s  24812/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+10:59:42 Uptime: 1d 15:02:13 Shares/Minute: 10.59 Electricity: 65.149kWh
+10:59:44 New Job: 85cc55b2 Difficulty: 4.00G
+10:59:45 New Job: 47fccf44 Difficulty: 4.00G
+10:59:45 New Job: b422e8da Difficulty: 4.00G
+10:59:48 New Job: 9364bde0 Difficulty: 4.00G
+10:59:51 New Job: b7dfdb11 Difficulty: 4.00G
+10:59:54 New Job: 4ea6ce06 Difficulty: 4.00G
+10:59:54 GPU7: Share #2142 verified on CPU, difficulty: 13.43G
+10:59:54 GPU7: Share #2142 accepted 81 ms
+10:59:54 New Job: e5bddfce Difficulty: 4.00G
+10:59:56 GPU4: Share #1991 verified on CPU, difficulty: 17.66G
+10:59:56 GPU4: Share #1991 accepted 41 ms
+10:59:57 New Job: 7ad64c74 Difficulty: 4.00G
+11:00:00 New Job: d536e5b5 Difficulty: 4.00G
+11:00:03 New Job: 9a3f5cf8 Difficulty: 4.00G
+11:00:04 New Job: d34408e0 Difficulty: 4.00G
+11:00:05 New Job: 98a8bffa Difficulty: 4.00G
+11:00:05 New Job: bb84d9a2 Difficulty: 4.00G
+11:00:08 New Job: f0ec1e0b Difficulty: 4.00G
+11:00:08 GPU0: Share #4138 verified on CPU, difficulty: 4.81G
+11:00:08 GPU0: Share #4138 accepted 281 ms
+11:00:09 GPU10: Share #4129 verified on CPU, difficulty: 6.47G
+11:00:09 GPU10: Share #4129 accepted 34 ms
+11:00:11 New Job: d3f31341 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.45 MH/s   4138/0/0 1125 10501   300 W  398.17 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2035/0/0  855  7900   120 W  504.99 KH/W |
+|  GPU2 44 C  80 %  60.60 MH/s   2014/0/3  840  7900   130 W  466.18 KH/W |
+|  GPU3 51 C  80 %  31.72 MH/s   1094/0/0 1035  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.96 MH/s   1991/0/0  615  7900   120 W  482.98 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2076/0/0  840  7900   120 W  505.05 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    948/0/0 1923  4201   119 W  220.53 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2142/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2080/0/0  780  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2169/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4129/0/0 1095 10501   310 W  386.30 KH/W |
+|                  718.67 MH/s  24816/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:00:12 Uptime: 1d 15:02:43 Shares/Minute: 10.59 Electricity: 65.163kWh
+11:00:13 New Job: d9a3d124 Difficulty: 4.00G
+11:00:15 New Job: a144938c Difficulty: 4.00G
+11:00:16 New Job: 18450597 Difficulty: 4.00G
+11:00:18 GPU1: Share #2036 verified on CPU, difficulty: 4.76G
+11:00:18 GPU1: Share #2036 accepted 35 ms
+11:00:18 GPU0: Share #4139 verified on CPU, difficulty: 7.11G
+11:00:18 GPU0: Share #4139 accepted 54 ms
+11:00:19 New Job: 7ee41ead Difficulty: 4.00G
+11:00:22 New Job: 9d6a953d Difficulty: 4.00G
+11:00:23 GPU1: Share #2037 verified on CPU, difficulty: 8.07G
+11:00:23 GPU1: Share #2037 accepted 280 ms
+11:00:23 GPU3: Share #1095 verified on CPU, difficulty: 10.84G
+11:00:23 GPU3: Share #1095 accepted 39 ms
+11:00:24 New Job: 8c116216 Difficulty: 4.00G
+11:00:27 New Job: c1f4bba6 Difficulty: 4.00G
+11:00:30 New Job: 7958518b Difficulty: 4.00G
+11:00:34 New Job: 32601554 Difficulty: 4.00G
+11:00:36 New Job: 1f965cbd Difficulty: 4.00G
+11:00:38 GPU7: Share #2143 verified on CPU, difficulty: 4.62G
+11:00:38 GPU7: Share #2143 accepted 272 ms
+11:00:39 New Job: ae3118fe Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.45 MH/s   4139/0/0 1110 10501   300 W  398.18 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2037/0/0  870  7900   120 W  504.99 KH/W |
+|  GPU2 44 C  80 %  60.60 MH/s   2014/0/3  840  7900   130 W  466.18 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1095/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.96 MH/s   1991/0/0  615  7900   120 W  482.96 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2076/0/0  855  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  81 %  26.24 MH/s    948/0/0 1911  4201   119 W  220.53 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2143/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2080/0/0  765  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2169/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4129/0/0 1110 10501   310 W  386.30 KH/W |
+|                  718.67 MH/s  24821/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:00:42 Uptime: 1d 15:03:13 Shares/Minute: 10.59 Electricity: 65.177kWh
+11:00:43 New Job: 7153cc73 Difficulty: 4.00G
+11:00:45 New Job: 790d4be6 Difficulty: 4.00G
+11:00:45 New Job: 073d5650 Difficulty: 4.00G
+11:00:45 New Job: a7b50c52 Difficulty: 4.00G
+11:00:48 New Job: e399c4fa Difficulty: 4.00G
+11:00:51 New Job: fa9e9b48 Difficulty: 4.00G
+11:00:54 New Job: b033df7d Difficulty: 4.00G
+11:00:55 GPU8: Share #2081 verified on CPU, difficulty: 7.44G
+11:00:55 GPU8: Share #2081 accepted 279 ms
+11:00:57 New Job: cb19c4cf Difficulty: 4.00G
+11:01:00 New Job: 3a4e5939 Difficulty: 4.00G
+11:01:03 New Job: cdf4651c Difficulty: 4.00G
+11:01:06 New Job: 096690f0 Difficulty: 4.00G
+11:01:09 New Job: df516b71 Difficulty: 4.00G
+11:01:12 New Job: fda7cf1c Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.45 MH/s   4139/0/0 1095 10501   300 W  398.17 KH/W |
+|  GPU1 55 C  80 %  60.60 MH/s   2037/0/0  855  7900   120 W  504.99 KH/W |
+|  GPU2 44 C  80 %  60.60 MH/s   2014/0/3  855  7900   130 W  466.18 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1095/0/0 1050  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.96 MH/s   1991/0/0  600  7900   120 W  483.00 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2076/0/0  840  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    948/0/0 1936  4201   120 W  218.69 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2143/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2081/0/0  765  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2169/0/0  825  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4129/0/0 1095 10501   310 W  386.30 KH/W |
+|                  718.67 MH/s  24822/0/3             1670 W  430.34 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:01:12 Uptime: 1d 15:03:43 Shares/Minute: 10.59 Electricity: 65.190kWh
+11:01:14 New Job: f1d0831c Difficulty: 4.00G
+11:01:16 New Job: 9171a948 Difficulty: 4.00G
+11:01:17 New Job: 11231e8a Difficulty: 4.00G
+11:01:18 New Job: b6fbf8d9 Difficulty: 4.00G
+11:01:18 New Job: 1088e424 Difficulty: 4.00G
+11:01:21 New Job: 326fe554 Difficulty: 4.00G
+11:01:25 New Job: 5140d4a6 Difficulty: 4.00G
+11:01:25 New Job: 22f1239f Difficulty: 4.00G
+11:01:26 GPU7: Share #2144 verified on CPU, difficulty: 19.67G
+11:01:26 GPU7: Share #2144 accepted 277 ms
+11:01:28 New Job: 9058c5b6 Difficulty: 4.00G
+11:01:30 New Job: 89898044 Difficulty: 4.00G
+11:01:31 New Job: 494341dc Difficulty: 4.00G
+11:01:32 New Job: 24cf3957 Difficulty: 4.00G
+11:01:32 New Job: 6e964c10 Difficulty: 4.00G
+11:01:33 GPU1: Share #2038 verified on CPU, difficulty: 21.44G
+11:01:33 GPU1: Share #2038 accepted 35 ms
+11:01:35 New Job: b906142a Difficulty: 4.00G
+11:01:38 New Job: be1da5b1 Difficulty: 4.00G
+11:01:40 New Job: 2c806c09 Difficulty: 4.00G
+11:01:42 New Job: 28e31787 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4139/0/0 1080 10501   300 W  398.15 KH/W |
+|  GPU1 55 C  80 %  60.60 MH/s   2038/0/0  855  7900   120 W  504.99 KH/W |
+|  GPU2 44 C  80 %  60.60 MH/s   2014/0/3  825  7900   130 W  466.18 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1095/0/0 1035  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.96 MH/s   1991/0/0  600  7900   120 W  483.00 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2076/0/0  840  7900   120 W  505.05 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    948/0/0 1911  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2144/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2081/0/0  780  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2169/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.76 MH/s   4129/0/0 1095 10501   310 W  386.31 KH/W |
+|                  718.67 MH/s  24824/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:01:42 Uptime: 1d 15:04:13 Shares/Minute: 10.59 Electricity: 65.204kWh
+11:01:45 New Job: 6e431631 Difficulty: 4.00G
+11:01:48 New Job: e0ca7255 Difficulty: 4.00G
+11:01:51 New Job: 6ff8729e Difficulty: 4.00G
+11:01:54 New Job: 51066205 Difficulty: 4.00G
+11:01:56 GPU10: Share #4130 verified on CPU, difficulty: 7.54G
+11:01:56 GPU10: Share #4130 accepted 36 ms
+11:01:57 New Job: fe4ec00f Difficulty: 4.00G
+11:01:57 GPU6: Share #949 verified on CPU, difficulty: 165.15G
+11:01:57 GPU6: Share #949 accepted 96 ms
+11:02:00 New Job: d861e008 Difficulty: 4.00G
+11:02:01 GPU3: Share #1096 verified on CPU, difficulty: 5.29G
+11:02:01 GPU3: Share #1096 accepted 282 ms
+11:02:01 GPU8: Share #2082 verified on CPU, difficulty: 4.83G
+11:02:01 GPU8: Share #2082 accepted 220 ms
+11:02:02 GPU10: Share #4131 verified on CPU, difficulty: 4.74G
+11:02:02 GPU10: Share #4131 accepted 35 ms
+11:02:02 New Job: 76d01dc9 Difficulty: 4.00G
+11:02:02 GPU10: Share #4132 verified on CPU, difficulty: 5.05G
+11:02:02 GPU10: Share #4132 accepted 283 ms
+11:02:05 New Job: cc06f614 Difficulty: 4.00G
+11:02:05 GPU0: Share #4140 verified on CPU, difficulty: 9.90G
+11:02:05 GPU0: Share #4140 accepted 34 ms
+11:02:08 New Job: c43e4f31 Difficulty: 4.00G
+11:02:09 GPU1: Share #2039 verified on CPU, difficulty: 5.03G
+11:02:09 GPU1: Share #2039 accepted 35 ms
+11:02:11 New Job: 5e03c1c1 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4140/0/0 1125 10501   300 W  398.14 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2039/0/0  870  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2014/0/3  840  7900   130 W  466.18 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1096/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.96 MH/s   1991/0/0  615  7900   120 W  483.04 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2076/0/0  840  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    949/0/0 1911  4201   120 W  218.70 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2144/0/0  705  7900   120 W  504.61 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2082/0/0  735  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2169/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.76 MH/s   4132/0/0 1110 10501   310 W  386.31 KH/W |
+|                  718.67 MH/s  24832/0/3             1670 W  430.34 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:02:12 Uptime: 1d 15:04:43 Shares/Minute: 10.59 Electricity: 65.218kWh
+11:02:14 New Job: 4bdb465c Difficulty: 4.00G
+11:02:16 GPU8: Share #2083 verified on CPU, difficulty: 7.76G
+11:02:16 GPU8: Share #2083 accepted 38 ms
+11:02:17 New Job: e5cf05c5 Difficulty: 4.00G
+11:02:20 New Job: 390000ff Difficulty: 4.00G
+11:02:23 GPU1: Share #2040 verified on CPU, difficulty: 6.71G
+11:02:23 GPU1: Share #2040 accepted 282 ms
+11:02:23 New Job: 274d04b9 Difficulty: 4.00G
+11:02:24 GPU5: Share #2077 verified on CPU, difficulty: 8.06G
+11:02:24 GPU5: Share #2077 accepted 94 ms
+11:02:24 GPU8: Share #2084 verified on CPU, difficulty: 5.18G
+11:02:24 GPU8: Share #2084 accepted 36 ms
+11:02:26 New Job: 6c1ee37e Difficulty: 4.00G
+11:02:28 New Job: c94d708a Difficulty: 4.00G
+11:02:28 New Job: b2e91099 Difficulty: 4.00G
+11:02:30 New Job: 5bc46db0 Difficulty: 4.00G
+11:02:31 GPU4: Share #1992 verified on CPU, difficulty: 43.11G
+11:02:31 GPU4: Share #1992 accepted 286 ms
+11:02:32 New Job: ece9ee82 Difficulty: 4.00G
+11:02:36 New Job: 63051a32 Difficulty: 4.00G
+11:02:39 New Job: 40208553 Difficulty: 4.00G
+11:02:42 New Job: 7071ddc1 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4140/0/0 1125 10501   300 W  398.13 KH/W |
+|  GPU1 55 C  80 %  60.60 MH/s   2040/0/0  855  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2014/0/3  855  7900   130 W  466.17 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1096/0/0 1050  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.97 MH/s   1992/0/0  615  7900   120 W  483.11 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2077/0/0  810  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    949/0/0 1936  4201   120 W  218.70 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2144/0/0  705  7900   120 W  504.61 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2084/0/0  750  7900   120 W  504.84 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2169/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4132/0/0 1095 10501   310 W  386.31 KH/W |
+|                  718.68 MH/s  24837/0/3             1670 W  430.35 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:02:42 Uptime: 1d 15:05:13 Shares/Minute: 10.59 Electricity: 65.232kWh
+11:02:43 New Job: c8c67ef6 Difficulty: 4.00G
+11:02:43 New Job: 153a7c29 Difficulty: 4.00G
+11:02:45 New Job: 82dfe178 Difficulty: 4.00G
+11:02:48 New Job: 4764bdf2 Difficulty: 4.00G
+11:02:51 New Job: 4665102b Difficulty: 4.00G
+11:02:54 New Job: ec93035b Difficulty: 4.00G
+11:02:56 GPU0: Share #4141 verified on CPU, difficulty: 5.61G
+11:02:56 GPU0: Share #4141 accepted 38 ms
+11:02:57 New Job: 41aff8d4 Difficulty: 4.00G
+11:03:00 New Job: 70089048 Difficulty: 4.00G
+11:03:01 New Job: 3a3853cc Difficulty: 4.00G
+11:03:02 New Job: 3284aa31 Difficulty: 4.00G
+11:03:03 GPU10: Share #4133 verified on CPU, difficulty: 7.44G
+11:03:03 GPU10: Share #4133 accepted 37 ms
+11:03:04 New Job: 27df94d8 Difficulty: 4.00G
+11:03:07 New Job: ee088838 Difficulty: 4.00G
+11:03:10 New Job: 1ad2f18b Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4141/0/0 1065 10501   300 W  398.13 KH/W |
+|  GPU1 55 C  80 %  60.60 MH/s   2040/0/0  870  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2014/0/3  855  7900   130 W  466.17 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1096/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.98 MH/s   1992/0/0  615  7900   120 W  483.13 KH/W |
+|  GPU5 46 C  80 %  60.61 MH/s   2077/0/0  840  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    949/0/0 1923  4201   120 W  218.70 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2144/0/0  690  7900   120 W  504.61 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2084/0/0  765  7900   120 W  504.83 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2169/0/0  825  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4133/0/0 1110 10501   310 W  386.31 KH/W |
+|                  718.68 MH/s  24839/0/3             1670 W  430.35 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:03:13 Uptime: 1d 15:05:43 Shares/Minute: 10.59 Electricity: 65.246kWh
+11:03:13 New Job: f0d67a90 Difficulty: 4.00G
+11:03:14 GPU4: Share #1993 verified on CPU, difficulty: 9.12G
+11:03:14 GPU4: Share #1993 accepted 35 ms
+11:03:16 New Job: 1dd583ef Difficulty: 4.00G
+11:03:19 New Job: c9686621 Difficulty: 4.00G
+11:03:22 New Job: e4533687 Difficulty: 4.00G
+11:03:25 GPU3: Share #1097 verified on CPU, difficulty: 20.43G
+11:03:25 GPU3: Share #1097 accepted 43 ms
+11:03:25 New Job: 018489a2 Difficulty: 4.00G
+11:03:27 GPU7: Share #2145 verified on CPU, difficulty: 9.57G
+11:03:27 GPU7: Share #2145 accepted 286 ms
+11:03:28 New Job: defb49d7 Difficulty: 4.00G
+11:03:31 New Job: bac9596b Difficulty: 4.00G
+11:03:34 New Job: 45fec290 Difficulty: 4.00G
+11:03:37 New Job: 577cafc8 Difficulty: 4.00G
+11:03:39 New Job: bee623ed Difficulty: 4.00G
+11:03:40 New Job: 9ed380d7 Difficulty: 4.00G
+11:03:42 New Job: d6cdebdf Difficulty: 4.00G
+11:03:42 New Job: 74ff2f90 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4141/0/0 1125 10501   300 W  398.13 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2040/0/0  840  7900   120 W  505.00 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2014/0/3  855  7900   130 W  466.17 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1097/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.97 MH/s   1993/0/0  600  7900   120 W  483.12 KH/W |
+|  GPU5 46 C  80 %  60.60 MH/s   2077/0/0  810  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  79 %  26.24 MH/s    949/0/0 1911  4201   120 W  218.70 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2145/0/0  705  7900   120 W  504.61 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2084/0/0  765  7900   120 W  504.83 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2169/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 51 C  80 % 119.75 MH/s   4133/0/0 1110 10501   310 W  386.31 KH/W |
+|                  718.68 MH/s  24842/0/3             1670 W  430.35 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:03:43 Uptime: 1d 15:06:13 Shares/Minute: 10.59 Electricity: 65.260kWh
+11:03:45 GPU9: Share #2170 verified on CPU, difficulty: 13.48G
+11:03:45 GPU9: Share #2170 accepted 39 ms
+11:03:45 New Job: b59923b5 Difficulty: 4.00G
+11:03:48 New Job: 64ca0057 Difficulty: 4.00G
+11:03:49 New Job: 6013f5e7 Difficulty: 4.00G
+11:03:49 New Job: 6aaa2ecc Difficulty: 4.00G
+11:03:52 New Job: 065fcbc1 Difficulty: 4.00G
+11:03:55 New Job: ddf8f6d3 Difficulty: 4.00G
+11:03:58 New Job: 71ce8d30 Difficulty: 4.00G
+11:04:02 New Job: fc4b8d4f Difficulty: 4.00G
+11:04:02 New Job: 0830c43a Difficulty: 4.00G
+11:04:04 New Job: a797a90a Difficulty: 4.00G
+11:04:05 New Job: 7837a9f5 Difficulty: 4.00G
+11:04:06 GPU2: Share #2018 verified on CPU, difficulty: 23.49G
+11:04:06 GPU2: Share #2018 accepted 35 ms
+11:04:07 New Job: 02cac71b Difficulty: 4.00G
+11:04:11 New Job: 9603df08 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4141/0/0 1110 10501   300 W  398.13 KH/W |
+|  GPU1 55 C  80 %  60.60 MH/s   2040/0/0  840  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2015/0/3  840  7900   130 W  466.17 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1097/0/0 1050  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.98 MH/s   1993/0/0  600  7900   120 W  483.17 KH/W |
+|  GPU5 46 C  80 %  60.60 MH/s   2077/0/0  840  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    949/0/0 1911  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2145/0/0  675  7900   120 W  504.61 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2084/0/0  735  7900   120 W  504.83 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2170/0/0  825  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.76 MH/s   4133/0/0 1110 10501   310 W  386.31 KH/W |
+|                  718.68 MH/s  24844/0/3             1669 W  430.61 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:04:13 Uptime: 1d 15:06:43 Shares/Minute: 10.59 Electricity: 65.274kWh
+11:04:13 GPU2: Share #2019 verified on CPU, difficulty: 10.97G
+11:04:13 GPU2: Share #2019 accepted 277 ms
+11:04:13 New Job: 7d763412 Difficulty: 4.00G
+11:04:16 GPU2: Share #2020 verified on CPU, difficulty: 7.26G
+11:04:16 GPU2: Share #2020 accepted 278 ms
+11:04:17 New Job: c569ad34 Difficulty: 4.00G
+11:04:18 GPU0: Share #4142 verified on CPU, difficulty: 6.58G
+11:04:18 GPU0: Share #4142 accepted 34 ms
+11:04:20 New Job: aed1915a Difficulty: 4.00G
+11:04:20 GPU9: Share #2171 verified on CPU, difficulty: 5.30G
+11:04:20 GPU9: Share #2171 accepted 276 ms
+11:04:22 GPU1: Share #2041 verified on CPU, difficulty: 5.01G
+11:04:22 GPU1: Share #2041 accepted 40 ms
+11:04:23 New Job: 0e9250fb Difficulty: 4.00G
+11:04:25 GPU4: Share #1994 verified on CPU, difficulty: 5.19G
+11:04:25 GPU4: Share #1994 accepted 35 ms
+11:04:25 GPU0: Share #4143 verified on CPU, difficulty: 444.94G
+11:04:25 GPU0: Share #4143 accepted 42 ms
+11:04:25 GPU9: Share #2172 verified on CPU, difficulty: 4.13G
+11:04:25 GPU9: Share #2172 accepted 69 ms
+11:04:25 New Job: e4e2b766 Difficulty: 4.00G
+11:04:26 GPU10: Share #4134 verified on CPU, difficulty: 4.35G
+11:04:26 GPU10: Share #4134 accepted 37 ms
+11:04:29 New Job: 023bf684 Difficulty: 4.00G
+11:04:30 GPU0: Share #4144 verified on CPU, difficulty: 5.22G
+11:04:30 GPU0: Share #4144 accepted 295 ms
+11:04:32 New Job: 1f322b35 Difficulty: 4.00G
+11:04:35 New Job: 3e196540 Difficulty: 4.00G
+11:04:36 GPU7: Share #2146 verified on CPU, difficulty: 9.03G
+11:04:36 GPU7: Share #2146 accepted 276 ms
+11:04:38 New Job: 6ab127f2 Difficulty: 4.00G
+11:04:38 New Job: 0a19b8f8 Difficulty: 4.00G
+11:04:38 New Job: 9981c85a Difficulty: 4.00G
+11:04:39 GPU2: Share #2021 verified on CPU, difficulty: 27.34G
+11:04:39 GPU2: Share #2021 accepted 35 ms
+11:04:41 New Job: e33a245d Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4144/0/0 1080 10501   300 W  398.14 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2041/0/0  855  7900   120 W  505.00 KH/W |
+|  GPU2 44 C  80 %  60.60 MH/s   2018/0/3  840  7900   130 W  466.17 KH/W |
+|  GPU3 51 C  80 %  31.72 MH/s   1097/0/0 1050  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.98 MH/s   1994/0/0  600  7900   120 W  483.14 KH/W |
+|  GPU5 46 C  80 %  60.60 MH/s   2077/0/0  795  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    949/0/0 1923  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2146/0/0  675  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2084/0/0  735  7900   120 W  504.83 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2172/0/0  840  7900   130 W  466.20 KH/W |
+| GPU10 50 C  80 % 119.76 MH/s   4134/0/0 1110 10501   310 W  386.31 KH/W |
+|                  718.68 MH/s  24856/0/3             1669 W  430.61 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:04:43 Uptime: 1d 15:07:13 Shares/Minute: 10.59 Electricity: 65.288kWh
+11:04:44 New Job: faf3ff07 Difficulty: 4.00G
+11:04:47 New Job: 0a5e6f8f Difficulty: 4.00G
+11:04:50 New Job: d45c422c Difficulty: 4.00G
+11:04:53 New Job: 59d07d4d Difficulty: 4.00G
+11:04:53 New Job: c14fa2eb Difficulty: 4.00G
+11:04:57 New Job: 492ad4a0 Difficulty: 4.00G
+11:04:58 GPU7: Share #2147 verified on CPU, difficulty: 10.76G
+11:04:58 GPU7: Share #2147 accepted 282 ms
+11:04:58 GPU2: Share #2022 verified on CPU, difficulty: 5.04G
+11:04:58 GPU2: Share #2022 accepted 45 ms
+11:04:59 New Job: 50aa6084 Difficulty: 4.00G
+11:04:59 GPU4: Share #1995 verified on CPU, difficulty: 5.05G
+11:04:59 GPU4: Share #1995 accepted 70 ms
+11:05:00 New Job: 42ba28b5 Difficulty: 4.00G
+11:05:00 New Job: 2789efff Difficulty: 4.00G
+11:05:02 GPU8: Share #2085 verified on CPU, difficulty: 4.29G
+11:05:02 GPU8: Share #2085 accepted 35 ms
+11:05:03 New Job: 590a25b0 Difficulty: 4.00G
+11:05:04 New Job: 0597d3c8 Difficulty: 4.00G
+11:05:05 New Job: b8221742 Difficulty: 4.00G
+11:05:08 New Job: 3f53646e Difficulty: 4.00G
+11:05:10 New Job: cc9508a3 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.43 MH/s   4144/0/0 1110 10501   300 W  398.11 KH/W |
+|  GPU1 55 C  80 %  60.60 MH/s   2041/0/0  855  7900   120 W  505.00 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2019/0/3  810  7900   130 W  466.17 KH/W |
+|  GPU3 51 C  80 %  31.72 MH/s   1097/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.98 MH/s   1995/0/0  600  7900   120 W  483.13 KH/W |
+|  GPU5 46 C  80 %  60.60 MH/s   2077/0/0  795  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  81 %  26.24 MH/s    949/0/0 1911  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2147/0/0  690  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2085/0/0  780  7900   120 W  504.83 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2172/0/0  825  7900   130 W  466.19 KH/W |
+| GPU10 50 C  80 % 119.76 MH/s   4134/0/0 1110 10501   310 W  386.31 KH/W |
+|                  718.67 MH/s  24860/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:05:13 Uptime: 1d 15:07:43 Shares/Minute: 10.59 Electricity: 65.302kWh
+11:05:13 New Job: dbdd58e4 Difficulty: 4.00G
+11:05:13 New Job: 6ffcd5f4 Difficulty: 4.00G
+11:05:15 GPU8: Share #2086 verified on CPU, difficulty: 32.08G
+11:05:15 GPU8: Share #2086 accepted 36 ms
+11:05:16 New Job: a9204e45 Difficulty: 4.00G
+11:05:19 New Job: 1bee556d Difficulty: 4.00G
+11:05:22 GPU2: Share #2023 verified on CPU, difficulty: 4.53G
+11:05:22 GPU2: Share #2023 accepted 38 ms
+11:05:22 New Job: cd65d417 Difficulty: 4.00G
+11:05:25 New Job: de331b84 Difficulty: 4.00G
+11:05:27 GPU7: Share #2148 verified on CPU, difficulty: 74.50G
+11:05:27 GPU7: Share #2148 accepted 39 ms
+11:05:28 New Job: 1f92d8f5 Difficulty: 4.00G
+11:05:31 New Job: 078681c3 Difficulty: 4.00G
+11:05:35 New Job: 16b355dd Difficulty: 4.00G
+11:05:35 GPU0: Share #4145 verified on CPU, difficulty: 18.01G
+11:05:35 GPU0: Share #4145 accepted 799 ms
+11:05:35 GPU1: Share #2042 verified on CPU, difficulty: 10.54G
+11:05:35 GPU1: Share #2042 accepted 514 ms
+11:05:37 New Job: 0951b356 Difficulty: 4.00G
+11:05:40 New Job: 553712f1 Difficulty: 4.00G
+11:05:42 GPU10: Share #4135 verified on CPU, difficulty: 15.37G
+11:05:42 GPU10: Share #4135 accepted 274 ms
+11:05:43 New Job: 4ea30287 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.43 MH/s   4145/0/0 1080 10501   300 W  398.12 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2042/0/0  870  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2020/0/3  825  7900   130 W  466.17 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1097/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.97 MH/s   1995/0/0  615  7900   120 W  483.08 KH/W |
+|  GPU5 46 C  80 %  60.60 MH/s   2077/0/0  825  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    949/0/0 1911  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2148/0/0  690  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2086/0/0  780  7900   120 W  504.83 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2172/0/0  855  7900   130 W  466.19 KH/W |
+| GPU10 50 C  80 % 119.76 MH/s   4135/0/0 1095 10501   310 W  386.31 KH/W |
+|                  718.67 MH/s  24866/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:05:43 Uptime: 1d 15:08:13 Shares/Minute: 10.59 Electricity: 65.316kWh
+11:05:44 New Job: 28765de1 Difficulty: 4.00G
+11:05:46 New Job: 6d46bbfa Difficulty: 4.00G
+11:05:49 New Job: f37fcbe3 Difficulty: 4.00G
+11:05:50 New Job: d89d1335 Difficulty: 4.00G
+11:05:50 New Job: 9151b1f6 Difficulty: 4.00G
+11:05:51 GPU5: Share #2078 verified on CPU, difficulty: 5.51G
+11:05:51 GPU5: Share #2078 accepted 33 ms
+11:05:53 New Job: 9a469de0 Difficulty: 4.00G
+11:05:56 GPU2: Share #2024 verified on CPU, difficulty: 21.75G
+11:05:56 GPU2: Share #2024 accepted 38 ms
+11:05:56 New Job: 836a5a8d Difficulty: 4.00G
+11:05:58 GPU1: Share #2043 verified on CPU, difficulty: 4.75G
+11:05:58 GPU1: Share #2043 accepted 35 ms
+11:05:59 GPU6: Share #950 verified on CPU, difficulty: 7.54G
+11:05:59 GPU6: Share #950 accepted 280 ms
+11:05:59 New Job: 03c42adf Difficulty: 4.00G
+11:06:01 GPU7: Share #2149 verified on CPU, difficulty: 7.64G
+11:06:01 GPU7: Share #2149 accepted 38 ms
+11:06:01 New Job: caad4bdc Difficulty: 4.00G
+11:06:02 New Job: 3f1413e1 Difficulty: 4.00G
+11:06:04 New Job: 01325020 Difficulty: 4.00G
+11:06:06 GPU9: Share #2173 verified on CPU, difficulty: 4.60G
+11:06:06 GPU9: Share #2173 accepted 40 ms
+11:06:07 GPU6: Share #951 verified on CPU, difficulty: 7.16G
+11:06:07 GPU6: Share #951 accepted 276 ms
+11:06:07 New Job: 5704f23d Difficulty: 4.00G
+11:06:09 GPU1: Share #2044 verified on CPU, difficulty: 7.36G
+11:06:09 GPU1: Share #2044 accepted 35 ms
+11:06:11 New Job: ff936633 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4145/0/0 1125 10501   300 W  398.12 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2044/0/0  870  7900   120 W  505.00 KH/W |
+|  GPU2 44 C  80 %  60.60 MH/s   2021/0/3  855  7900   130 W  466.17 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1097/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 53 C  80 %  57.97 MH/s   1995/0/0  615  7900   120 W  483.06 KH/W |
+|  GPU5 46 C  80 %  60.60 MH/s   2078/0/0  810  7900   120 W  505.04 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    951/0/0 1911  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2149/0/0  690  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2086/0/0  735  7900   120 W  504.83 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2173/0/0  855  7900   130 W  466.19 KH/W |
+| GPU10 50 C  80 % 119.76 MH/s   4135/0/0 1110 10501   310 W  386.31 KH/W |
+|                  718.67 MH/s  24874/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:06:13 Uptime: 1d 15:08:43 Shares/Minute: 10.59 Electricity: 65.330kWh
+11:06:13 New Job: b015316f Difficulty: 4.00G
+11:06:16 New Job: f4fdff54 Difficulty: 4.00G
+11:06:16 GPU8: Share #2087 verified on CPU, difficulty: 9.57G
+11:06:16 GPU8: Share #2087 accepted 102 ms
+11:06:16 New Job: 20028f98 Difficulty: 4.00G
+11:06:19 New Job: 05e8fa11 Difficulty: 4.00G
+11:06:21 GPU0: Share #4146 verified on CPU, difficulty: 4.60G
+11:06:21 GPU0: Share #4146 accepted 36 ms
+11:06:22 GPU0: Share #4147 verified on CPU, difficulty: 11.73G
+11:06:22 GPU0: Share #4147 accepted 277 ms
+11:06:22 New Job: 9891b600 Difficulty: 4.00G
+11:06:22 New Job: 13ed22bc Difficulty: 4.00G
+11:06:25 New Job: 08afffe9 Difficulty: 4.00G
+11:06:28 New Job: 2e2484e5 Difficulty: 4.00G
+11:06:31 New Job: 269e21d5 Difficulty: 4.00G
+11:06:32 GPU9: Share #2174 verified on CPU, difficulty: 16.74G
+11:06:32 GPU9: Share #2174 accepted 278 ms
+11:06:34 New Job: 2847647c Difficulty: 4.00G
+11:06:36 GPU7: Share #2150 verified on CPU, difficulty: 6.38G
+11:06:36 GPU7: Share #2150 accepted 275 ms
+11:06:37 New Job: 3283af27 Difficulty: 4.00G
+11:06:40 New Job: 915ca899 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4147/0/0 1110 10501   300 W  398.13 KH/W |
+|  GPU1 55 C  80 %  60.60 MH/s   2044/0/0  870  7900   120 W  505.00 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2021/0/3  855  7900   130 W  466.17 KH/W |
+|  GPU3 51 C  80 %  31.72 MH/s   1097/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.97 MH/s   1995/0/0  615  7900   120 W  483.07 KH/W |
+|  GPU5 46 C  80 %  60.60 MH/s   2078/0/0  795  7900   120 W  505.03 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    951/0/0 1911  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2150/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2087/0/0  765  7900   120 W  504.83 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2174/0/0  825  7900   130 W  466.19 KH/W |
+| GPU10 50 C  80 % 119.76 MH/s   4135/0/0 1095 10501   310 W  386.31 KH/W |
+|                  718.67 MH/s  24879/0/3             1669 W  430.60 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:06:43 Uptime: 1d 15:09:14 Shares/Minute: 10.59 Electricity: 65.343kWh
+11:06:43 New Job: 56e3729e Difficulty: 4.00G
+11:06:45 New Job: 12a522ff Difficulty: 4.00G
+11:06:45 New Job: 61027fc3 Difficulty: 4.00G
+11:06:45 GPU0: Share #4148 verified on CPU, difficulty: 5.11G
+11:06:45 GPU0: Share #4148 accepted 69 ms
+11:06:48 New Job: c7b7ca0c Difficulty: 4.00G
+11:06:48 New Job: 05c76a48 Difficulty: 4.00G
+11:06:48 New Job: 24bdfd04 Difficulty: 4.00G
+11:06:49 GPU8: Share #2088 verified on CPU, difficulty: 4.89G
+11:06:49 GPU8: Share #2088 accepted 273 ms
+11:06:50 New Job: 4cd3e209 Difficulty: 4.00G
+11:06:50 New Job: 4392fa50 Difficulty: 4.00G
+11:06:50 New Job: e884eaef Difficulty: 4.00G
+11:06:53 New Job: a76b842d Difficulty: 4.00G
+11:06:55 GPU2: Share #2025 verified on CPU, difficulty: 7.24G
+11:06:55 GPU2: Share #2025 accepted 275 ms
+11:06:56 New Job: 3c2a1632 Difficulty: 4.00G
+11:06:58 GPU0: Share #4149 verified on CPU, difficulty: 9.72G
+11:06:58 GPU0: Share #4149 accepted 278 ms
+11:07:00 New Job: c7bfb692 Difficulty: 4.00G
+11:07:02 New Job: 963443a5 Difficulty: 4.00G
+11:07:06 New Job: 561fedf6 Difficulty: 4.00G
+11:07:09 New Job: ffc46138 Difficulty: 4.00G
+11:07:12 New Job: 099276a5 Difficulty: 4.00G
+11:07:13 New Job: a75fb085 Difficulty: 4.00G
+11:07:13 New Job: b6acbec1 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4149/0/0 1125 10501   300 W  398.12 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2044/0/0  870  7900   120 W  504.99 KH/W |
+|  GPU2 44 C  80 %  60.60 MH/s   2022/0/3  855  7900   130 W  466.17 KH/W |
+|  GPU3 51 C  80 %  31.72 MH/s   1097/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.96 MH/s   1995/0/0  615  7900   120 W  482.99 KH/W |
+|  GPU5 46 C  80 %  60.60 MH/s   2078/0/0  795  7900   120 W  505.03 KH/W |
+|  GPU6 59 C  81 %  26.24 MH/s    951/0/0 1911  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2150/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2088/0/0  765  7900   120 W  504.83 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2174/0/0  825  7900   130 W  466.19 KH/W |
+| GPU10 50 C  80 % 119.76 MH/s   4135/0/0 1110 10501   310 W  386.31 KH/W |
+|                  718.66 MH/s  24883/0/3             1669 W  430.59 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:07:13 Uptime: 1d 15:09:44 Shares/Minute: 10.59 Electricity: 65.357kWh
+11:07:16 New Job: 5ad820e4 Difficulty: 4.00G
+11:07:18 New Job: 67e27df7 Difficulty: 4.00G
+11:07:21 New Job: cac5e319 Difficulty: 4.00G
+11:07:21 New Job: 6b377ffc Difficulty: 4.00G
+11:07:22 New Job: a036a460 Difficulty: 4.00G
+11:07:25 New Job: 64944714 Difficulty: 4.00G
+11:07:27 GPU10: Share #4136 verified on CPU, difficulty: 5.75G
+11:07:27 GPU10: Share #4136 accepted 35 ms
+11:07:28 New Job: c8308ff4 Difficulty: 4.00G
+11:07:30 New Job: c4397ffc Difficulty: 4.00G
+11:07:31 New Job: 1eae1e26 Difficulty: 4.00G
+11:07:34 New Job: d4b67dd4 Difficulty: 4.00G
+11:07:34 GPU8: Share #2089 verified on CPU, difficulty: 8.22G
+11:07:34 GPU8: Share #2089 accepted 36 ms
+11:07:37 New Job: 9356b0e0 Difficulty: 4.00G
+11:07:39 New Job: 2e76b034 Difficulty: 4.00G
+11:07:41 GPU0: Share #4150 verified on CPU, difficulty: 5.17G
+11:07:41 GPU0: Share #4150 accepted 35 ms
+11:07:43 New Job: 91c9694b Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4150/0/0 1125 10501   300 W  398.12 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2044/0/0  840  7900   120 W  504.99 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2022/0/3  840  7900   130 W  466.17 KH/W |
+|  GPU3 51 C  80 %  31.72 MH/s   1097/0/0 1080  7750    80 W  396.50 KH/W |
+|  GPU4 53 C  80 %  57.95 MH/s   1995/0/0  615  7900   120 W  482.92 KH/W |
+|  GPU5 45 C  80 %  60.60 MH/s   2078/0/0  840  7900   120 W  505.03 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    951/0/0 1936  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2150/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2089/0/0  765  7900   120 W  504.83 KH/W |
+|  GPU9 45 C  80 %  60.61 MH/s   2174/0/0  840  7900   130 W  466.19 KH/W |
+| GPU10 50 C  80 % 119.76 MH/s   4136/0/0 1095 10501   310 W  386.31 KH/W |
+|                  718.65 MH/s  24886/0/3             1669 W  430.59 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:07:43 Uptime: 1d 15:10:14 Shares/Minute: 10.59 Electricity: 65.371kWh
+11:07:44 GPU3: Share #1098 verified on CPU, difficulty: 18.97G
+11:07:44 GPU3: Share #1098 accepted 275 ms
+11:07:45 New Job: cf6ecc28 Difficulty: 4.00G
+11:07:49 New Job: c5da09d5 Difficulty: 4.00G
+11:07:50 GPU5: Share #2079 verified on CPU, difficulty: 10.89G
+11:07:50 GPU5: Share #2079 accepted 282 ms
+11:07:51 New Job: 90f1779a Difficulty: 4.00G
+11:07:51 GPU9: Share #2175 verified on CPU, difficulty: 4.81G
+11:07:51 GPU9: Share #2175 accepted 35 ms
+11:07:55 New Job: d721adbe Difficulty: 4.00G
+11:07:58 New Job: 8afca982 Difficulty: 4.00G
+11:08:00 New Job: b495f79e Difficulty: 4.00G
+11:08:04 New Job: 31d91a01 Difficulty: 4.00G
+11:08:05 GPU9: Share #2176 verified on CPU, difficulty: 5.92G
+11:08:05 GPU9: Share #2176 accepted 275 ms
+11:08:06 New Job: 4096e599 Difficulty: 4.00G
+11:08:10 New Job: 5ee9cde2 Difficulty: 4.00G
+11:08:13 New Job: ee302f04 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.44 MH/s   4150/0/0 1140 10501   300 W  398.12 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2044/0/0  855  7900   120 W  505.00 KH/W |
+|  GPU2 44 C  80 %  60.60 MH/s   2022/0/3  855  7900   130 W  466.17 KH/W |
+|  GPU3 50 C  80 %  31.72 MH/s   1098/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 54 C  80 %  57.94 MH/s   1995/0/0  600  7900   120 W  482.86 KH/W |
+|  GPU5 46 C  80 %  60.60 MH/s   2079/0/0  795  7900   120 W  505.03 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    951/0/0 1911  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2150/0/0  705  7900   120 W  504.60 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2089/0/0  765  7900   120 W  504.82 KH/W |
+|  GPU9 45 C  80 %  60.60 MH/s   2176/0/0  840  7900   130 W  466.19 KH/W |
+| GPU10 51 C  80 % 119.76 MH/s   4136/0/0 1080 10501   310 W  386.31 KH/W |
+|                  718.64 MH/s  24890/0/3             1669 W  430.58 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:08:13 Uptime: 1d 15:10:44 Shares/Minute: 10.59 Electricity: 65.385kWh
+11:08:16 New Job: 19a2f61d Difficulty: 4.00G
+11:08:19 New Job: 28e63478 Difficulty: 4.00G
+11:08:21 GPU9: Share #2177 verified on CPU, difficulty: 16.09G
+11:08:21 GPU9: Share #2177 accepted 292 ms
+11:08:22 New Job: 49ea655b Difficulty: 4.00G
+11:08:24 New Job: 3b3669a7 Difficulty: 4.00G
+11:08:28 New Job: 5f4db2ee Difficulty: 4.00G
+11:08:28 GPU3: Share #1099 verified on CPU, difficulty: 8.24G
+11:08:28 GPU3: Share #1099 accepted 35 ms
+11:08:29 GPU0: Share #4151 verified on CPU, difficulty: 9.45G
+11:08:29 GPU0: Share #4151 accepted 36 ms
+11:08:30 New Job: b66fd828 Difficulty: 4.00G
+11:08:32 GPU10: Share #4137 verified on CPU, difficulty: 4.20G
+11:08:32 GPU10: Share #4137 accepted 38 ms
+11:08:34 New Job: af45ff29 Difficulty: 4.00G
+11:08:36 GPU8: Share #2090 verified on CPU, difficulty: 4.22G
+11:08:36 GPU8: Share #2090 accepted 263 ms
+11:08:36 New Job: 60c64609 Difficulty: 4.00G
+11:08:37 GPU8: Share #2091 verified on CPU, difficulty: 9.94G
+11:08:37 GPU8: Share #2091 accepted 327 ms
+11:08:38 GPU7: Share #2151 verified on CPU, difficulty: 15.59G
+11:08:38 GPU7: Share #2151 accepted 35 ms
+11:08:41 New Job: dda74386 Difficulty: 4.00G
+11:08:41 GPU8: Share #2092 verified on CPU, difficulty: 5.21G
+11:08:41 GPU8: Share #2092 accepted 63 ms
+11:08:43 New Job: 6d4594e4 Difficulty: 4.00G
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU  Temp  Fan     Speed      Shares   Core  Mem   Power   Efficiency  |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+|  GPU0 43 C  80 % 119.43 MH/s   4151/0/0 1080 10501   300 W  398.10 KH/W |
+|  GPU1 54 C  80 %  60.60 MH/s   2044/0/0  840  7900   120 W  505.00 KH/W |
+|  GPU2 43 C  80 %  60.60 MH/s   2022/0/3  840  7900   130 W  466.17 KH/W |
+|  GPU3 51 C  80 %  31.72 MH/s   1099/0/0 1065  7750    80 W  396.50 KH/W |
+|  GPU4 53 C  80 %  57.94 MH/s   1995/0/0  615  7900   120 W  482.79 KH/W |
+|  GPU5 46 C  80 %  60.60 MH/s   2079/0/0  795  7900   120 W  505.03 KH/W |
+|  GPU6 59 C  80 %  26.24 MH/s    951/0/0 1936  4201   119 W  220.54 KH/W |
+|  GPU7 53 C  80 %  60.55 MH/s   2151/0/0  705  7900   120 W  504.61 KH/W |
+|  GPU8 45 C  80 %  60.58 MH/s   2092/0/0  750  7900   120 W  504.82 KH/W |
+|  GPU9 45 C  80 %  60.60 MH/s   2177/0/0  825  7900   130 W  466.19 KH/W |
+| GPU10 50 C  80 % 119.75 MH/s   4137/0/0 1095 10501   310 W  386.30 KH/W |
+|                  718.62 MH/s  24898/0/3             1669 W  430.57 KH/W |
++------+----+-----+-----------+----------+----+-----+-------+-------------+
+11:08:43 Uptime: 1d 15:11:14 Shares/Minute: 10.59 Electricity: 65.399kWh
