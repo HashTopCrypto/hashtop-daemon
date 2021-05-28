@@ -12,10 +12,10 @@ from tzlocal import get_localzone
 import daemon
 from main import LOGLEVEL
 
-invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d).*(?<status>failed)")
-valid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d).*(?<status>accept)")
-log_dir = 'data/logs'
-newest = max(glob.iglob(log_dir + '/*.log'), key=os.path.getctime)
+invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>failed)")
+valid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>accept)")
+log_dir = 'logs'
+newest = max(glob.iglob(log_dir + '/*'), key=os.path.getctime)
 if LOGLEVEL == "DEBUG":
     print(newest)
 
