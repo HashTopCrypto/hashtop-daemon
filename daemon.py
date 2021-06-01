@@ -1,8 +1,10 @@
+from asyncio import sleep
+
 from dotenv import load_dotenv
 import os
 import asyncio
 import socketio
-
+from logger import logger
 import log_reader
 from main import LOGLEVEL
 
@@ -18,13 +20,14 @@ USERNAME = os.getenv('USERNAME')
 API_URL = os.getenv('API_URL')
 namespace = '/miner'
 
+
 @sio.event
 async def send_health_update(data):
     response = await sio.emit('health_update',
                               (os.getenv('MINER_UUID'),
                                data)
                               )
-    print(response)
+    return response
 
 
 @sio.event

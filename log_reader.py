@@ -28,7 +28,7 @@ async def preprocess(queue):
             if share_result:
                 await queue.put(share_result)
                 if LOGLEVEL == "DEBUG":
-                    print(f"producing {log_line}")
+                    print(f"preprocessing {log_line}")
 
 
 async def produce(queue):
