@@ -1,4 +1,6 @@
 import asyncio
+import traceback
+import health_reader
 import log_reader
 import daemon
 import logging
@@ -13,9 +15,10 @@ async def run():
     queue = asyncio.Queue()
     await daemon.connect_server()
     await asyncio.gather(rerun_on_exception(log_reader.consume, queue),
-                         rerun_on_exception(log_reader.preprocess, queue),
+                         #rerun_on_exception(log_reader.preprocess, queue),
                          rerun_on_exception(daemon.run),
-                         rerun_on_exception(log_reader.produce, queue)
+                         rerun_on_exception(log_reader.produce, queue),
+                         rerun_on_exception(health_reader.query_health)
                          )
 
 
