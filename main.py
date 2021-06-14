@@ -5,6 +5,7 @@ import log_reader
 import daemon
 import logging
 import os
+import traceback
 
 LOGLEVEL = os.environ.get('LOGLEVEL', 'WARNING').upper()
 logging.basicConfig(level=LOGLEVEL)
@@ -31,6 +32,7 @@ async def rerun_on_exception(coro, *args, **kwargs):
         except Exception:
             print("Caught exception")
             traceback.print_exc()
+
 
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()

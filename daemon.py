@@ -1,8 +1,10 @@
+from asyncio import sleep
+
 from dotenv import load_dotenv
 import os
 import asyncio
 import socketio
-
+from logger import logger
 import log_reader
 from main import LOGLEVEL
 
@@ -17,6 +19,7 @@ MINER_UUID = os.getenv('MINER_UUID')
 USERNAME = os.getenv('USERNAME')
 API_URL = os.getenv('API_URL')
 namespace = '/miner'
+
 
 @sio.event
 async def send_share_update(data):
@@ -36,6 +39,7 @@ async def send_health_update(data):
 
     if LOGLEVEL == "DEBUG":
         print(response)
+    return response
 
 @sio.event
 async def disconnect():
