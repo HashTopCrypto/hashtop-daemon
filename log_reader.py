@@ -12,7 +12,7 @@ from tzlocal import get_localzone
 import daemon
 from main import LOGLEVEL
 
-invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>failed)")
+invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>reject)")
 valid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>accept)")
 log_dir = 'logs'
 newest = max(glob.iglob(log_dir + '/*'), key=os.path.getctime)
@@ -39,7 +39,7 @@ async def produce(queue):
         share_result = parse_line(log_line)
         if share_result:
             if LOGLEVEL == "DEBUG":
-                print(f"producing {log_line}")
+                print(f"preprocessing {log_line}")
             await queue.put(share_result)
 
 
@@ -52,7 +52,8 @@ async def consume(queue):
         if LOGLEVEL == "DEBUG":
             print(f'consuming {item}...')
 
-        await daemon.send_health_update(item)
+        # send the share data to the backend to be put into the db
+        await daemon.send_share_update(item)
 
     # Notify the queue that the item has been processed
     queue.task_done()
@@ -64,13 +65,15 @@ async def get_last_line(file):
         while f.read(1) != b'\n':
             f.seek(-2, os.SEEK_CUR)
         last_line = f.readline().decode()
+    if LOGLEVEL == "DEBUG":
+        print(last_line)
     return last_line
 
 
 def parse_line(line: str) -> dict:
     # reading line by line so we can match once
-    invalid = re.match(pattern=invalid_shares, string=line)
-    valid = re.match(pattern=valid_shares, string=line)
+    invalid = re.search(pattern=invalid_shares, string=line)
+    valid = re.search(pattern=valid_shares, string=line)
 
     # only return a dict if the line read is a share status line
     if invalid or valid:
@@ -80,7 +83,7 @@ def parse_line(line: str) -> dict:
         share_type = 'valid' if match.group('status') == 'accept' else 'invalid'
         print(share_type)
         return {
-            'share_type': share_type,
+            'sh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     are_type': share_type,
             'gpu_no': match.group('gpu_no'),
             'timestamp': ts
         }
