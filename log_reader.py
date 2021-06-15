@@ -12,6 +12,7 @@ from tzlocal import get_localzone
 import daemon
 from main import LOGLEVEL
 
+performance_re = re.compile(r"GPU(?<gpu_no>\d+?).*?(?<hashrate>\s\d+\.\d+\s).*?(?<core>\s\d+\s).*?(?<memory>\s\d+\s)")
 invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>reject)")
 valid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>accept)")
 log_dir = 'logs'
@@ -39,7 +40,7 @@ async def produce(queue):
         share_result = parse_line(log_line)
         if share_result:
             if LOGLEVEL == "DEBUG":
-                print(f"preprocessing {log_line}")
+                print(f"producing {log_line}")
             await queue.put(share_result)
 
 
@@ -53,8 +54,11 @@ async def consume(queue):
             print(f'consuming {item}...')
 
         # send the share data to the backend to be put into the db
-        await daemon.send_share_update(item)
-
+        if item[0] == 'share':
+            await daemon.send_share_update(item[1])
+        elif item[0] == 'performance':
+            # health endpoint expects an array of health stats
+            await daemon.send_health_update([item[1]])
     # Notify the queue that the item has been processed
     queue.task_done()
 
@@ -72,6 +76,7 @@ async def get_last_line(file):
 
 def parse_line(line: str) -> dict:
     # reading line by line so we can match once
+    performance = re.search(pattern=performance_re, string=line)
     invalid = re.search(pattern=invalid_shares, string=line)
     valid = re.search(pattern=valid_shares, string=line)
 
@@ -82,13 +87,21 @@ def parse_line(line: str) -> dict:
         ts = create_timestamp(log_time)
         share_type = 'valid' if match.group('status') == 'accept' else 'invalid'
         print(share_type)
-        return {
-            'sh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     are_type': share_type,
+        return ('share', {
+            'timestamp': ts,
+            'share_type': share_type,
             'gpu_no': match.group('gpu_no'),
-            'timestamp': ts
-        }
-    else:
-        return None
+        })
+    elif performance:
+        print("got performance")
+        ts = int(time.time())
+        return ('performance', {
+            'timestamp': ts,
+            'gpu_no': performance.group('gpu_no'),
+            'hashrate': performance.group('hashrate'),
+            'core': performance.group('core'),
+            'memory': performance.group('memory'),
+        })
 
 
 def create_timestamp(log_time: time) -> datetime:

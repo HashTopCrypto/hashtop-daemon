@@ -30,6 +30,7 @@ async def send_share_update(data):
     if LOGLEVEL == "DEBUG":
         print(response)
 
+
 @sio.event
 async def send_health_update(data):
     response = await sio.emit('health_update',
@@ -41,6 +42,7 @@ async def send_health_update(data):
         print(response)
     return response
 
+
 @sio.event
 async def disconnect():
     print('disconnected from server')
@@ -51,10 +53,18 @@ async def connect():
     print('connection established')
     await sio.emit('connect')
 
-@sio.event
+
 async def connect_server():
-    await sio.connect(API_URL)
-    print(sio.sid)
+    connected = False
+    while not connected:
+        try:
+            await sio.connect(API_URL)
+            await sio.wait()
+        except:
+            print("connection error")
+        else:
+            connected = True
+            print(sio.sid)
 
 
 async def run():
