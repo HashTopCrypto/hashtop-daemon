@@ -13,9 +13,9 @@ logging.basicConfig(level=LOGLEVEL)
 
 async def run():
     queue = asyncio.Queue()
-    await asyncio.gather(daemon.connect_server(),
-                         rerun_on_exception(log_reader.consume, queue),
-                         # rerun_on_exception(log_reader.preprocess, queue),
+    await daemon.connect_server()
+    await asyncio.gather(rerun_on_exception(log_reader.consume, queue),
+                         #rerun_on_exception(log_reader.preprocess, queue),
                          rerun_on_exception(daemon.run),
                          rerun_on_exception(log_reader.produce, queue),
                          rerun_on_exception(health_reader.query_health)
@@ -29,8 +29,8 @@ async def rerun_on_exception(coro, *args, **kwargs):
         except asyncio.CancelledError:
             # don't interfere with cancellations
             raise
-        except Exception as e:
-            print("Caught exception" + e)
+        except Exception:
+            print("Caught exception")
             traceback.print_exc()
 
 
