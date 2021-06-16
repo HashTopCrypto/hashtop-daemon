@@ -55,16 +55,8 @@ async def connect():
 
 
 async def connect_server():
-    connected = False
-    while not connected:
-        try:
-            await sio.connect(API_URL)
-            await sio.wait()
-        except:
-            print("connection error")
-        else:
-            connected = True
-            print(sio.sid)
+    await sio.connect(API_URL)
+    print(sio.sid)
 
 
 async def run():
