@@ -13,12 +13,12 @@ logging.basicConfig(level=LOGLEVEL)
 
 async def run():
     queue = asyncio.Queue()
-    await daemon.connect_server()
-    await asyncio.gather(rerun_on_exception(log_reader.consume, queue),
-                         #rerun_on_exception(log_reader.preprocess, queue),
+    await asyncio.gather(daemon.connect_server(),
+                         rerun_on_exception(log_reader.consume, queue),
+                         # rerun_on_exception(log_reader.preprocess, queue),
                          rerun_on_exception(daemon.run),
                          rerun_on_exception(log_reader.produce, queue),
-                         rerun_on_exception(health_reader.query_health)
+                         rerun_on_exception(health_reader.query_nvml_health)
                          )
 
 
