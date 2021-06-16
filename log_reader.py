@@ -39,7 +39,7 @@ async def produce(queue):
         share_result = parse_line(log_line)
         if share_result:
             if LOGLEVEL == "DEBUG":
-                print(f"preprocessing {log_line}")
+                print(f"producing {log_line}")
             await queue.put(share_result)
 
 
@@ -83,7 +83,7 @@ def parse_line(line: str) -> dict:
         share_type = 'valid' if match.group('status') == 'accept' else 'invalid'
         print(share_type)
         return {
-            'sh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     are_type': share_type,
+            'share_type': share_type,
             'gpu_no': match.group('gpu_no'),
             'timestamp': ts
         }

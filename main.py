@@ -15,10 +15,9 @@ async def run():
     queue = asyncio.Queue()
     await asyncio.gather(daemon.connect_server(),
                          rerun_on_exception(log_reader.consume, queue),
-                         # rerun_on_exception(log_reader.preprocess, queue),
                          rerun_on_exception(daemon.run),
                          rerun_on_exception(log_reader.produce, queue),
-                         rerun_on_exception(health_reader.query_nvml_health)
+                         rerun_on_exception(health_reader.query_all_health),
                          )
 
 
@@ -32,7 +31,6 @@ async def rerun_on_exception(coro, *args, **kwargs):
         except Exception:
             print("Caught exception")
             traceback.print_exc()
-
 
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
