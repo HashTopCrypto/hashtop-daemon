@@ -7,7 +7,7 @@ declare -a arr=("money-printer"
 "bfserver"
 "henry")
 
-task() {
+job() {
     daemon_path="~/mining"
     echo "$1"
 
@@ -35,6 +35,6 @@ EOF
 
 for rig in "${arr[@]}"
 do 
-    task "$rig" &
+    job "$rig" &
 done
 wait
