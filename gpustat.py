@@ -124,6 +124,22 @@ class GPUStat(object):
         return int(v) if v is not None else None
 
     @property
+    def mem_clock(self):
+        """
+        Returns the memory clock, or None if the information is not available.
+        """
+        v = self.entry['mem.clock']
+        return int(v) if v is not None else None
+
+    @property
+    def core_clock(self):
+        """
+        Returns the memory clock, or None if the information is not available.
+        """
+        v = self.entry['core.clock']
+        return int(v) if v is not None else None
+
+    @property
     def utilization(self):
         """
         Returns the GPU utilization (in percentile),
@@ -446,6 +462,16 @@ class GPUStatCollection(object):
                 power_limit = None
 
             try:
+                mem_clock = N.nvmlDeviceGetClockInfo(handle, 2)
+            except N.NVMLError:
+                mem_clock = None
+
+            try:
+                core_clock = N.nvmlDeviceGetClockInfo(handle, 1)
+            except N.NVMLError:
+                core_clock = None
+
+            try:
                 nv_comp_processes = \
                     N.nvmlDeviceGetComputeRunningProcesses(handle)
             except N.NVMLError:
@@ -498,6 +524,8 @@ class GPUStatCollection(object):
                 'name': name,
                 'temperature.gpu': temperature,
                 'fan.speed': fan_speed,
+                'mem.clock': mem_clock,
+                'core.clock': core_clock,
                 'utilization.gpu': utilization.gpu if utilization else None,
                 'utilization.enc':
                     utilization_enc[0] if utilization_enc else None,

@@ -34,7 +34,9 @@ async def query_nvml_health():
             'fan_speed': stat.fan_speed,
             'temperature': stat.temperature,
             'power_draw': stat.power_draw,
-            'power_limit': stat.power_limit
+            'power_limit': stat.power_limit,
+            'core_clock': stat.core_clock,
+            'mem_clock': stat.mem_clock,
         })
     if LOGLEVEL == "DEBUG":
         print(gpu_stats)

@@ -8,15 +8,15 @@ declare -a arr=(
 "bfserver"
 "henry")
 
+dest_path="~/mining/scripts"
 
-upload() {
+job() {
 
-    dest_path="~/mining"
     echo "$1"
 
     if [ "$1" = "bfserver" ]
     then
-        dest_path="~/mining/gminer"
+        dest_path="~/mining/gminer/scripts"
     fi
 
     # upload the python scripts
@@ -27,16 +27,16 @@ upload() {
 
     # install requirements then start the daemon
     ssh -tt $1 << EOF
-                cd $dest_path
-                source venv/bin/activate
-                pip3 install -r requirements.txt
-                exit
+cd $dest_path
+source venv/bin/activate
+pip3 install -r requirements.txt
+exit
 EOF
 }
 
 ## now loop through the above array
 for rig in "${arr[@]}"
 do
-    upload "$rig" &
+    job "$rig" &
 done
 wait
