@@ -43,7 +43,7 @@ async def query_nvml_health():
 
 async def query_gminer_hashrate():
     async with aiohttp.ClientSession() as session:
-        async with session.get('http://127.0.0.1:43110/stat') as response:
+        async with session.get('http://127.0.0.1:43111/stat') as response:
             if response.status == 200:
                 data = await response.json()
                 gpu_hashrate = {}
