@@ -10,16 +10,15 @@ import time
 async def query_all_health():
     await sleep(30)
     nvml_health = await query_nvml_health()
-    gpu_hashrate = await query_gminer_hashrate()
+    gminer_health = await query_gminer_info()
     gpu_healths = []
     for health in nvml_health:
         gpu_no = int(health['gpu_no'])
         gpu_healths.append({
             'timestamp': int(time.time()),
             **health,
-            'hashrate': gpu_hashrate[gpu_no]
+            **gminer_health[gpu_no]
         })
-    print(gpu_hashrate)
 
     await daemon.send_health_update(gpu_healths)
 
@@ -30,7 +29,6 @@ async def query_nvml_health():
     for stat in gpustat.new_query():
         gpu_stats.append({
             'gpu_no': stat.index,
-            'gpu_name': stat.name,
             'fan_speed': stat.fan_speed,
             'temperature': stat.temperature,
             'power_draw': stat.power_draw,
@@ -43,19 +41,23 @@ async def query_nvml_health():
     return gpu_stats
 
 
-async def query_gminer_hashrate():
+async def query_gminer_info():
     async with aiohttp.ClientSession() as session:
         async with session.get('http://127.0.0.1:43111/stat') as response:
             if response.status == 200:
                 data = await response.json()
-                gpu_hashrate = {}
+                gminer_info = {}
                 for gpu in data.get('devices'):
                     gpu_no = gpu.get('gpu_id')
                     hashrate = gpu.get('speed')
-                    gpu_hashrate[gpu_no] = hashrate
+                    gpu_name = gpu.get('name')
+                    gminer_info[gpu_no] = {
+                        'hashrate': hashrate,
+                        'gpu_name': gpu_name
+                    }
 
                 if LOGLEVEL == "DEBUG":
-                    print(gpu_hashrate)
-                return gpu_hashrate
+                    print(gminer_info)
+                return gminer_info
             else:
                 print(response)
