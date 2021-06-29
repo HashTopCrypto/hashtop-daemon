@@ -8,16 +8,19 @@ import regex as re
 import datetime
 import pytz
 from tzlocal import get_localzone
-
 import daemon
-from main import LOGLEVEL
+import logging
+from base_logger import logger
+
+logger = logger.getLogger(__name__)
+
 
 invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>reject)")
 valid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>accept)")
-log_dir = '../logs'
+log_dir = 'data/logs' if os.getenv('LOCAL') == 'true' else '../logs'
+
 newest = max(glob.iglob(log_dir + '/*'), key=os.path.getctime)
-if LOGLEVEL == "DEBUG":
-    print(newest)
+logging.info(newest)
 
 
 async def preprocess(queue):
@@ -27,8 +30,7 @@ async def preprocess(queue):
             share_result = parse_line(log_line)
             if share_result:
                 await queue.put(share_result)
-                if LOGLEVEL == "DEBUG":
-                    print(f"preprocessing {log_line}")
+                logger.info(f"preprocessing {log_line}")
 
 
 async def produce(queue):
@@ -38,8 +40,7 @@ async def produce(queue):
 
         share_result = parse_line(log_line)
         if share_result:
-            if LOGLEVEL == "DEBUG":
-                print(f"producing {log_line}")
+            logger.info(f"producing {log_line}")
             await queue.put(share_result)
 
 
@@ -49,8 +50,7 @@ async def consume(queue):
         item = await queue.get()
 
         # process the item
-        if LOGLEVEL == "DEBUG":
-            print(f'consuming {item}...')
+        logger.info(f"consuming {item}")
 
         # send the share data to the backend to be put into the db
         await daemon.send_share_update(item)
@@ -65,8 +65,7 @@ async def get_last_line(file):
         while f.read(1) != b'\n':
             f.seek(-2, os.SEEK_CUR)
         last_line = f.readline().decode()
-    if LOGLEVEL == "DEBUG":
-        print(last_line)
+    logger.debug('get_last_line' + last_line)
     return last_line
 
 
@@ -81,7 +80,7 @@ def parse_line(line: str) -> dict:
         log_time = datetime.datetime.strptime(match.group('time'), "%H:%M:%S").time()
         ts = create_timestamp(log_time)
         share_type = 'valid' if match.group('status') == 'accept' else 'invalid'
-        print(share_type)
+        logger.info(share_type)
         return {
             'share_type': share_type,
             'gpu_no': match.group('gpu_no'),
