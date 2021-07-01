@@ -3,12 +3,15 @@ from asyncio import sleep
 import aiohttp
 import gpustat
 import daemon
-from main import LOGLEVEL
 import time
+from base_logger import logger
+
+logger = logger.getLogger(__name__)
 
 
 async def query_all_health():
     await sleep(30)
+    logger.info("querying healths")
     nvml_health = await query_nvml_health()
     gminer_health = await query_gminer_info()
     gpu_healths = []
@@ -19,7 +22,7 @@ async def query_all_health():
             **health,
             **gminer_health[gpu_no]
         })
-
+    logger.debug(gpu_healths)
     await daemon.send_health_update(gpu_healths)
 
 
@@ -36,8 +39,8 @@ async def query_nvml_health():
             'core_clock': stat.core_clock,
             'mem_clock': stat.mem_clock,
         })
-    if LOGLEVEL == "DEBUG":
-        print(gpu_stats)
+        logger.debug(gpu_stats)
+
     return gpu_stats
 
 
@@ -55,9 +58,9 @@ async def query_gminer_info():
                         'hashrate': hashrate,
                         'gpu_name': gpu_name
                     }
-
-                if LOGLEVEL == "DEBUG":
-                    print(gminer_info)
+                    logger.debug(gminer_info[gpu_no])
+                logger.info(response.status)
+                logger.debug(gminer_info)
                 return gminer_info
             else:
-                print(response)
+                logger.error(response)

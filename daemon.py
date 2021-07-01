@@ -4,13 +4,15 @@ from dotenv import load_dotenv
 import os
 import asyncio
 import socketio
-from logger import logger
-import log_reader
-from main import LOGLEVEL
+import logging
+from base_logger import logger
+
+
+logger = logger.getLogger(__name__)
+
 
 load_dotenv()
-
-if LOGLEVEL == "DEBUG":
+if logger.level == logging.DEBUG or logger.level == logging.INFO:
     sio = socketio.AsyncClient(logger=True, engineio_logger=True)
 else:
     sio = socketio.AsyncClient()
@@ -23,34 +25,36 @@ namespace = '/miner'
 
 @sio.event
 async def send_share_update(data):
+    logger.info('sending share update')
     response = await sio.emit('share_update',
                               (os.getenv('MINER_UUID'),
                                data)
                               )
-    if LOGLEVEL == "DEBUG":
-        print(response)
+  #  logger.info('send_share_update' + response)
+    logger.debug(response)
 
 
 @sio.event
 async def send_health_update(data):
+    logger.info('sending health update')
     response = await sio.emit('health_update',
                               (os.getenv('MINER_UUID'),
                                data)
                               )
 
-    if LOGLEVEL == "DEBUG":
-        print(response)
+   # logger.info("send_health_update" + response)
+    logger.debug(response)
     return response
 
 
 @sio.event
 async def disconnect():
-    print('disconnected from server')
+    logger.warning("disconnected from server")
 
 
 @sio.event
 async def connect():
-    print('connection established')
+    logger.info("connection established")
     await sio.emit('connect')
 
 
@@ -58,13 +62,14 @@ async def connect_server():
     connected = False
     while not connected:
         try:
+            logger.info("connecting to server")
             await sio.connect(API_URL)
             await sio.wait()
         except:
-            print("connection error")
+            logger.warning("connection error")
         else:
             connected = True
-            print(sio.sid)
+            logger.info(sio.sid)
 
 
 async def run():

@@ -3,13 +3,14 @@ import traceback
 import health_reader
 import log_reader
 import daemon
-import logging
 import os
-import traceback
 
-LOGLEVEL = os.environ.get('LOGLEVEL', 'WARNING').upper()
-logging.basicConfig(level=LOGLEVEL)
+from base_logger import logger
+from dotenv import load_dotenv
+load_dotenv()
 
+
+logger = logger.getLogger(__name__)
 
 async def run():
     queue = asyncio.Queue()
@@ -24,13 +25,14 @@ async def run():
 async def rerun_on_exception(coro, *args, **kwargs):
     while True:
         try:
+            logger.warning('running coroutine again...')
             await coro(*args, **kwargs)
         except asyncio.CancelledError:
             # don't interfere with cancellations
             raise
-        except Exception:
-            print("Caught exception")
-            traceback.print_exc()
+        except Exception as e:
+            logger.error(e, exc_info=True)
+            #traceback.print_exc()
 
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()

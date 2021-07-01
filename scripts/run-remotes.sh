@@ -7,13 +7,13 @@ declare -a arr=("money-printer"
 "bfserver"
 "henry")
 
+daemon_path="~/mining/scripts"
 job() {
-    daemon_path="~/mining"
     echo "$1"
 
     if [ "$1" = "bfserver" ]
     then
-        daemon_path="~/mining/gminer"
+        daemon_path="~/mining/gminer/scripts"
     fi
 
 # create the tmux session if it doesnt already exist

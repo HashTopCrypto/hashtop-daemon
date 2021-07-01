@@ -20,10 +20,10 @@ job() {
     fi
 
     # upload the python scripts
-    scp -o IdentityFile=path *.py $1:$dest_path
+    scp -o IdentityFile=path ../*.py $1:$dest_path
 
     # upload requirements
-    scp -o IdentityFile=path requirements.txt $1:$dest_path
+    scp -o IdentityFile=path ../requirements.txt $1:$dest_path
 
     # install requirements then start the daemon
     ssh -tt $1 << EOF
