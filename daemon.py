@@ -1,15 +1,10 @@
-from asyncio import sleep
-
 from dotenv import load_dotenv
 import os
-import asyncio
 import socketio
 import logging
 from base_logger import logger
 
-
 logger = logger.getLogger(__name__)
-
 
 load_dotenv()
 if logger.level == logging.DEBUG or logger.level == logging.INFO:
@@ -30,7 +25,7 @@ async def send_share_update(data):
                               (os.getenv('MINER_UUID'),
                                data)
                               )
-  #  logger.info('send_share_update' + response)
+    #  logger.info('send_share_update' + response)
     logger.debug(response)
 
 
@@ -42,7 +37,7 @@ async def send_health_update(data):
                                data)
                               )
 
-   # logger.info("send_health_update" + response)
+    # logger.info("send_health_update" + response)
     logger.debug(response)
     return response
 
