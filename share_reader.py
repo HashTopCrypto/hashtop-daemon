@@ -1,47 +1,47 @@
-import glob
 import os
-import asyncio
 import time
-import aiofiles
-from watchgod import awatch
 import regex as re
 import datetime
 import pytz
 from tzlocal import get_localzone
 import daemon
-import logging
 from base_logger import logger
+from colors import strip_color
+import fcntl
+import subprocess
+from threading import Thread
 
 logger = logger.getLogger(__name__)
-
 
 invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>reject)")
 valid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>accept)")
 log_dir = 'data/logs' if os.getenv('LOCAL') == 'true' else '../logs'
 
-newest = max(glob.iglob(log_dir + '/*'), key=os.path.getctime)
-logging.info(newest)
+
+def start_mining(queue):
+    # gminer must be run from a bash script otherwise it will complain about hacking (?!?!?!)
+    logger.info('Starting mining')
+    cmd = './start-mining.sh'
+    miner_process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+    thread = Thread(target=produce, args=[miner_process.stdout, queue])
+    thread.daemon = True
+    thread.start()
+
+    miner_process.wait()
+    thread.join(timeout=1)
 
 
-async def preprocess(queue):
-    # produce only reads changes so we need to preprocess the file
-    async with aiofiles.open(newest) as f:
-        async for log_line in f:
-            share_result = parse_line(log_line)
+def produce(stdout, queue):
+    ''' needs to be in a thread so we can read the stdout w/o blocking '''
+    while True:
+        line = non_block_read(stdout)
+        if line:
+            line = strip_color(line.decode('utf-8').rstrip('\n'))
+            logger.debug(line)
+            share_result = parse_line(line)
             if share_result:
-                await queue.put(share_result)
-                logger.info(f"preprocessing {log_line}")
-
-
-async def produce(queue):
-    # read updates from the log asynchronously
-    async for changes in awatch(newest):
-        log_line = await get_last_line(newest)
-
-        share_result = parse_line(log_line)
-        if share_result:
-            logger.info(f"producing {log_line}")
-            await queue.put(share_result)
+                logger.info(f"producing {line}")
+                queue.put(share_result)
 
 
 async def consume(queue):
@@ -59,14 +59,15 @@ async def consume(queue):
     queue.task_done()
 
 
-async def get_last_line(file):
-    with open(file, 'rb') as f:
-        f.seek(-2, os.SEEK_END)
-        while f.read(1) != b'\n':
-            f.seek(-2, os.SEEK_CUR)
-        last_line = f.readline().decode()
-    logger.debug('get_last_line' + last_line)
-    return last_line
+def non_block_read(output):
+    ''' even in a thread, a normal read with block until the buffer is full '''
+    fd = output.fileno()
+    fl = fcntl.fcntl(fd, fcntl.F_GETFL)
+    fcntl.fcntl(fd, fcntl.F_SETFL, fl | os.O_NONBLOCK)
+    try:
+        return output.read()
+    except:
+        return ''
 
 
 def parse_line(line: str) -> dict:
