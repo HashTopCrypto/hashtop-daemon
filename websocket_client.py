@@ -1,13 +1,15 @@
+from asyncio import sleep
+
 from dotenv import load_dotenv
 import os
 import socketio
 import logging
-from base_logger import logger
+from base_logger import logger, LOGLEVEL
 
 logger = logger.getLogger(__name__)
 
 load_dotenv()
-if logger.level == logging.DEBUG or logger.level == logging.INFO:
+if LOGLEVEL == 'DEBUG':
     sio = socketio.AsyncClient(logger=True, engineio_logger=True)
 else:
     sio = socketio.AsyncClient()
@@ -65,6 +67,7 @@ async def connect_server():
         else:
             connected = True
             logger.info(sio.sid)
+        sleep(5)
 
 
 async def run():

@@ -4,7 +4,7 @@ import regex as re
 import datetime
 import pytz
 from tzlocal import get_localzone
-import daemon
+import websocket_client
 from base_logger import logger
 from colors import strip_color
 import fcntl
@@ -53,7 +53,7 @@ async def consume(queue):
         logger.info(f"consuming {item}")
 
         # send the share data to the backend to be put into the db
-        await daemon.send_share_update(item)
+        await websocket_client.send_share_update(item)
 
     # Notify the queue that the item has been processed
     queue.task_done()

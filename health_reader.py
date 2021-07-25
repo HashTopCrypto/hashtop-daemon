@@ -2,7 +2,7 @@ import datetime
 from asyncio import sleep
 import aiohttp
 import gpustat
-import daemon
+import websocket_client
 import time
 from base_logger import logger
 
@@ -23,7 +23,7 @@ async def query_all_health():
             **gminer_health[gpu_no]
         })
     logger.debug(gpu_healths)
-    await daemon.send_health_update(gpu_healths)
+    await websocket_client.send_health_update(gpu_healths)
 
 
 async def query_nvml_health():

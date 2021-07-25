@@ -5,7 +5,7 @@ import janus
 import os
 import health_reader
 import share_reader
-import daemon
+import websocket_client
 import subprocess
 from colors import strip_color
 
@@ -29,9 +29,9 @@ async def run():
 
     loop.run_in_executor(None, share_reader.start_mining, queue.sync_q)
     loop.run_in_executor(None, delayed_overclock())
-    await asyncio.gather(daemon.connect_server(),
+    await asyncio.gather(websocket_client.connect_server(),
                          rerun_on_exception(share_reader.consume, queue.async_q),
-                         rerun_on_exception(daemon.run),
+                         rerun_on_exception(websocket_client.run),
                          rerun_on_exception(health_reader.query_all_health),
                          )
 
