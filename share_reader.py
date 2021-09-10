@@ -10,7 +10,9 @@ from colors import strip_color
 import fcntl
 import subprocess
 from threading import Thread
+from logging.handlers import TimedRotatingFileHandler
 
+gminer_log = TimedRotatingFileHandler('gminer.log', 'H', 24, backupCount=1)
 logger = logger.getLogger(__name__)
 
 invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>reject)")
@@ -18,12 +20,13 @@ valid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<stat
 log_dir = 'data/logs' if os.getenv('LOCAL') == 'true' else '../logs'
 
 
-def start_mining(queue):
+
+def start_mining(gminer_lines):
     # gminer must be run from a bash script otherwise it will complain about hacking (?!?!?!)
     logger.info('Starting mining')
     cmd = './start-mining.sh'
     miner_process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-    thread = Thread(target=produce, args=[miner_process.stdout, queue])
+    thread = Thread(target=produce, args=[miner_process.stdout, gminer_lines])
     thread.daemon = True
     thread.start()
 
@@ -31,17 +34,19 @@ def start_mining(queue):
     thread.join(timeout=1)
 
 
-def produce(stdout, queue):
+def produce(stdout, gminer_lines):
     ''' needs to be in a thread so we can read the stdout w/o blocking '''
     while True:
         line = non_block_read(stdout)
         if line:
             line = strip_color(line.decode('utf-8').rstrip('\n'))
             logger.debug(line)
+            # write the line to the rotating log
+            gminer_log.debug(line)
             share_result = parse_line(line)
             if share_result:
                 logger.info(f"producing {line}")
-                queue.put(share_result)
+                gminer_lines.put(share_result)
 
 
 async def consume(queue):

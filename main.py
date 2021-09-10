@@ -8,7 +8,6 @@ import share_reader
 import websocket_client
 import subprocess
 from colors import strip_color
-
 from base_logger import logger
 from dotenv import load_dotenv
 
