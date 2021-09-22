@@ -34,4 +34,5 @@ def print_subprocess(cmd: str):
 
 
 def run_with_sudo(cmd: str, *args):
-    print_subprocess(f"echo {os.getenv('SUDO_PASS')} | sudo -S {cmd} {args}")
+    args_string = " ".join([a for a in args])
+    print_subprocess(f"echo {os.getenv('SUDO_PASS')} | sudo -S {cmd} {args_string}")
