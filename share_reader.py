@@ -11,12 +11,15 @@ import fcntl
 import subprocess
 from threading import Thread
 
+from helpers import run_with_sudo
+
 logger = logger.getLogger(__name__)
 
 invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>reject)")
 valid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>accept)")
 log_dir = 'data/logs' if os.getenv('LOCAL') == 'true' else '../logs'
-
+INVALIDS_BEFORE_RESTART = 5
+total_invalid = 0
 
 def start_mining(queue):
     # gminer must be run from a bash script otherwise it will complain about hacking (?!?!?!)
@@ -58,6 +61,12 @@ async def consume(queue):
     # Notify the queue that the item has been processed
     queue.task_done()
 
+def check_invalids(share):
+    global total_invalid
+    if share['share_type'] == 'invalid':
+        total_invalid += 1
+        if total_invalid >= INVALIDS_BEFORE_RESTART:
+            run_with_sudo('reboot now')
 
 def non_block_read(output):
     ''' even in a thread, a normal read with block until the buffer is full '''
