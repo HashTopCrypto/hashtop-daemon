@@ -6,9 +6,8 @@ import os
 import health_reader
 import share_reader
 import websocket_client
-import subprocess
-from colors import strip_color
 
+from helpers import print_subprocess, run_with_sudo
 from base_logger import logger
 from dotenv import load_dotenv
 
@@ -36,19 +35,11 @@ async def run():
                          )
 
 
-def print_subprocess(cmd: str):
-    process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-    for line in process.stdout:
-        if line:
-            line = strip_color(line.decode('utf-8').rstrip('\n'))
-            logger.debug(line)
-
-
 def delayed_overclock():
     # wait for the dag to be generated before overclocking
     sleep(45)
     logger.info('Overclocking GPUs')
-    print_subprocess(f"echo {os.getenv('SUDO_PASS')} | sudo -S ./oc-gpus")
+    run_with_sudo("./oc-gpus")
 
 
 async def rerun_on_exception(coro, *args, **kwargs):
