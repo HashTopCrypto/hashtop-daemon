@@ -10,9 +10,14 @@ from colors import strip_color
 import fcntl
 import subprocess
 from threading import Thread
-from logging.handlers import TimedRotatingFileHandler
+from logging.handlers import TimedRotatingFileHandler, RotatingFileHandler
 
-gminer_log = TimedRotatingFileHandler('gminer.log', 'H', 24, backupCount=1)
+#rotating_handler = TimedRotatingFileHandler('gminer.log', 'D', 7, backupCount=1)
+# keep 4, 5gb log files
+rotating_handler = RotatingFileHandler('gminer.log', maxBytes=5368709120, backupCount=4)
+gminer_logger = logger.getLogger(__name__)
+gminer_logger.addHandler(rotating_handler)
+gminer_logger.propagate = False
 logger = logger.getLogger(__name__)
 
 invalid_shares = re.compile(r"(?<time>\d\d:\d\d:\d\d).*GPU(?<gpu_no>\d+):.*(?<status>reject)")
@@ -42,7 +47,7 @@ def produce(stdout, gminer_lines):
             line = strip_color(line.decode('utf-8').rstrip('\n'))
             logger.debug(line)
             # write the line to the rotating log
-            gminer_log.debug(line)
+            gminer_logger.info(line)
             share_result = parse_line(line)
             if share_result:
                 logger.info(f"producing {line}")
