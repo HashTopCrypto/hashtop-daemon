@@ -75,6 +75,8 @@ def check_invalids(share):
     if share['share_type'] == 'invalid':
         total_invalid += 1
         if total_invalid >= INVALIDS_BEFORE_RESTART:
+            gminer_logger.warning(f'{INVALIDS_BEFORE_RESTART} invalid shares detected, restarting now')
+            logger.warning(f'{INVALIDS_BEFORE_RESTART} invalid shares detected, restarting now')
             run_with_sudo('reboot now')
 
 def non_block_read(output):
