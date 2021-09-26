@@ -1,12 +1,13 @@
 #!/bin/bash
 ## declare an array variable
 declare -a arr=(
-"money-printer"
-"jonah"
+#"money-printer"
+#"jonah"
 "emily"
-"john"
-"bfserver"
-"henry")
+#"john"
+#"bfserver"
+#"henry"
+)
 
 
 dest_path="~/mining/scripts"

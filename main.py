@@ -6,7 +6,6 @@ import os
 import health_reader
 import share_reader
 import websocket_client
-
 from helpers import print_subprocess, run_with_sudo
 from base_logger import logger
 from dotenv import load_dotenv
