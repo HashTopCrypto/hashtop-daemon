@@ -51,6 +51,7 @@ def produce(stdout, gminer_lines):
             # write the line to the rotating log
             gminer_logger.info(line)
             share_result = parse_line(line)
+            check_invalids(share_result)
             if share_result:
                 logger.info(f"producing {line}")
                 gminer_lines.put(share_result)
@@ -75,8 +76,8 @@ def check_invalids(share):
     if share['share_type'] == 'invalid':
         total_invalid += 1
         if total_invalid >= INVALIDS_BEFORE_RESTART:
-            gminer_logger.warning(f'{INVALIDS_BEFORE_RESTART} invalid shares detected, restarting now')
-            logger.warning(f'{INVALIDS_BEFORE_RESTART} invalid shares detected, restarting now')
+            gminer_logger.error(f'{INVALIDS_BEFORE_RESTART} invalid shares detected, restarting now')
+            logger.error(f'{INVALIDS_BEFORE_RESTART} invalid shares detected, restarting now')
             run_with_sudo('reboot now')
 
 def non_block_read(output):
